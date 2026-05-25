@@ -5,6 +5,7 @@ export default defineConfig({
   description:
     "Toolkit SOP, template, dan checklist operasional masjid/mushola",
   lang: "id-ID",
+  base: "/sop-masjid/",
 
   themeConfig: {
     nav: [
