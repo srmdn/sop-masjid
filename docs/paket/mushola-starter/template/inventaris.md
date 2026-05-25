@@ -10,7 +10,7 @@ Download file Excel di bawah — langsung buka di Excel, WPS, atau import ke Goo
 
 | Template | Download |
 |---|---|
-| Inventaris Barang (2 sheet) | [inventaris-barang.xlsx](/template/inventaris-barang.xlsx) |
+| Inventaris Barang (2 sheet) | <a href="https://srmdn.github.io/sop-masjid/template/inventaris-barang.xlsx" download>inventaris-barang.xlsx</a> |
 
 ## Struktur Template
 

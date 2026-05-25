@@ -10,7 +10,7 @@ Download file Excel di bawah — langsung buka di Excel, WPS, atau import ke Goo
 
 | Template | Download |
 |---|---|
-| Jadwal Imam/Muadzin (2 sheet) | [jadwal-imam-muadzin.xlsx](/template/jadwal-imam-muadzin.xlsx) |
+| Jadwal Imam/Muadzin (2 sheet) | <a href="https://srmdn.github.io/sop-masjid/template/jadwal-imam-muadzin.xlsx" download>jadwal-imam-muadzin.xlsx</a> |
 
 ## Struktur Template
 

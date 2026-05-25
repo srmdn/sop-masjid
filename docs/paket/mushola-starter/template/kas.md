@@ -10,7 +10,7 @@ Download file Excel di bawah — langsung buka di Excel, WPS, atau import ke Goo
 
 | Template | Download |
 |---|---|
-| Kas Masuk-Keluar (2 sheet) | [kas-masuk-keluar.xlsx](/template/kas-masuk-keluar.xlsx) |
+| Kas Masuk-Keluar (2 sheet) | <a href="https://srmdn.github.io/sop-masjid/template/kas-masuk-keluar.xlsx" download>kas-masuk-keluar.xlsx</a> |
 
 ## Struktur Template
 
