@@ -4,15 +4,25 @@ Template spreadsheet untuk mencatat dan mengatur jadwal imam, muadzin, dan khati
 
 ## Cara Dapatkan
 
-1. Buka link Google Sheet yang disediakan
-2. Pilih **File → Buat Salinan**
-3. Simpan ke Google Drive mushola kamu
-4. Mulai isi jadwal
+### Opsi 1: Download CSV (langsung pakai)
 
-::: info Template Google Sheet
-Link template akan tersedia setelah template dibuat di Google Drive project.
+1. Download file CSV di bawah
+2. Buka [Google Sheets](https://sheets.google.com) → **File → Import → Upload**
+3. Pilih file CSV → **Import data**
+4. Ulangi untuk sheet kedua
+5. Mulai isi jadwal
 
-Sementara itu, kamu bisa membuat sendiri dengan mengikuti panduan kolom di bawah.
+| Sheet | Download |
+|---|---|
+| Jadwal Harian | [jadwal-imam-harian.csv](/template/jadwal-imam-harian.csv) |
+| Daftar Petugas | [jadwal-imam-petugas.csv](/template/jadwal-imam-petugas.csv) |
+
+### Opsi 2: Google Sheet template *(segera hadir)*
+
+::: info Template Google Sheet siap pakai
+Template Google Sheet yang bisa langsung disalin dengan **File → Buat Salinan** akan tersedia segera.
+
+Sementara itu, gunakan Opsi 1 (CSV) di atas — hasilnya sama.
 :::
 
 ## Struktur Template
