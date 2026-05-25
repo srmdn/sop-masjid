@@ -1,94 +1,113 @@
 /* ============================================================
-   SOP Masjid — Custom VitePress Theme
+   SOP Masjid — "Masjid Journal" Theme
    
-   Aesthetic: Warm, approachable, Islamic-inspired modern docs.
-   Typography: Cormorant Garamond (headings) + Source Sans 3 (body)
-   Accent: Deep emerald green (#1A7A5C) — grounded, Islamic, professional
-   Background: Warm cream (#FAF9F5) — not flat white
+   Aesthetic: Clean, authoritative, warm — like a well-designed
+   Islamic institutional document. Dignified but approachable.
+   NOT ornate. NOT generic SaaS. NOT template.
+   
+   Typography: DM Serif Display (headings) + Plus Jakarta Sans (body)
+   Accent: Deep warm teal — calm, trustworthy, "masjid"
+   Background: Warm stone/cream — never flat white
    ============================================================ */
 
-/* --- Favicon Placeholder ---
-   Add a favicon.ico or favicon.svg to docs/public/ when ready.
-   VitePress serves files from docs/public/ at the site root automatically.
-   Recommended: create docs/public/favicon.svg with a mosque/mimbar icon.
---- */
-
 /* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 /* ============================================================
    Design Tokens — Light Mode
    ============================================================ */
 :root {
-  /* Brand / Accent — Deep emerald green */
-  --vp-c-brand-1: #1A7A5C;
-  --vp-c-brand-2: #22946E;
-  --vp-c-brand-3: #2AAA80;
-  --vp-c-brand-soft: rgba(26, 122, 92, 0.14);
+  /* Brand / Accent — Deep warm teal */
+  --vp-c-brand-1: #0F766E;
+  --vp-c-brand-2: #0D9488;
+  --vp-c-brand-3: #14B8A6;
+  --vp-c-brand-soft: rgba(15, 118, 110, 0.10);
 
-  /* Backgrounds — Warm cream */
-  --vp-c-bg: #FAF9F5;
-  --vp-c-bg-soft: #F3F1EB;
-  --vp-c-bg-mute: #EBE8E0;
-  --vp-c-bg-alt: #F5F3ED;
+  /* Backgrounds — Warm stone */
+  --vp-c-bg: #F8F6F1;
+  --vp-c-bg-soft: #F0EDE5;
+  --vp-c-bg-mute: #E6E2D8;
+  --vp-c-bg-alt: #F4F1EA;
 
   /* Text — Warm neutrals */
-  --vp-c-text-1: #2D2B27;
-  --vp-c-text-2: #6B6860;
-  --vp-c-text-3: #9A9689;
+  --vp-c-text-1: #1C1917;
+  --vp-c-text-2: #57534E;
+  --vp-c-text-3: #A8A29E;
 
   /* Borders */
-  --vp-c-border: #DDD9CF;
-  --vp-c-border-hard: #C8C3B8;
-  --vp-c-gutter: #EBE8E0;
+  --vp-c-border: #D6D3CD;
+  --vp-c-border-hard: #B8B4AC;
+  --vp-c-gutter: #E6E2D8;
 
   /* Fonts */
-  --vp-font-family-base: 'Source Sans 3', 'Source Sans Pro', system-ui, -apple-system, sans-serif;
+  --vp-font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --vp-font-family-mono: ui-monospace, SFMono-Regular, 'Fira Code', 'JetBrains Mono', Menlo, monospace;
 
-  /* Custom tokens */
-  --sop-accent: #1A7A5C;
-  --sop-accent-light: #22946E;
-  --sop-accent-soft: rgba(26, 122, 92, 0.08);
-  --sop-accent-glow: rgba(26, 122, 92, 0.15);
-  --sop-heading-font: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
-  --sop-body-font: 'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
-  --sop-warm-bg: #FAF9F5;
-  --sop-warm-surface: #F3F1EB;
-  --sop-warm-border: #DDD9CF;
+  /* Custom design tokens */
+  --sop-accent: #0F766E;
+  --sop-accent-hover: #0D9488;
+  --sop-accent-soft: rgba(15, 118, 110, 0.07);
+  --sop-accent-glow: rgba(15, 118, 110, 0.14);
+  --sop-accent-deep: #0A5C56;
+  --sop-heading-font: 'DM Serif Display', 'Georgia', 'Times New Roman', serif;
+  --sop-body-font: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --sop-warm-bg: #F8F6F1;
+  --sop-warm-surface: #F0EDE5;
+  --sop-warm-border: #D6D3CD;
   --sop-radius: 6px;
   --sop-radius-lg: 10px;
+
+  /* Badge tokens */
+  --badge-progress-bg: rgba(15, 118, 110, 0.10);
+  --badge-progress-text: #0F766E;
+  --badge-progress-border: rgba(15, 118, 110, 0.25);
+  --badge-upcoming-bg: rgba(87, 83, 78, 0.08);
+  --badge-upcoming-text: #57534E;
+  --badge-upcoming-border: rgba(87, 83, 78, 0.20);
+
+  /* Decorative pattern color */
+  --sop-pattern-color: rgba(15, 118, 110, 0.08);
 }
 
 /* ============================================================
    Design Tokens — Dark Mode
    ============================================================ */
 .dark {
-  --vp-c-brand-1: #3AB894;
-  --vp-c-brand-2: #4EC9A5;
-  --vp-c-brand-3: #5DD5B3;
-  --vp-c-brand-soft: rgba(58, 184, 148, 0.14);
+  --vp-c-brand-1: #2DD4BF;
+  --vp-c-brand-2: #5EEAD4;
+  --vp-c-brand-3: #99F6E4;
+  --vp-c-brand-soft: rgba(45, 212, 191, 0.12);
 
-  --vp-c-bg: #1A1A18;
-  --vp-c-bg-soft: #222220;
-  --vp-c-bg-mute: #2A2A27;
-  --vp-c-bg-alt: #1E1E1C;
+  --vp-c-bg: #1A1917;
+  --vp-c-bg-soft: #232320;
+  --vp-c-bg-mute: #2C2B27;
+  --vp-c-bg-alt: #1E1D1B;
 
-  --vp-c-text-1: #E8E6E0;
-  --vp-c-text-2: #A8A498;
-  --vp-c-text-3: #7A766C;
+  --vp-c-text-1: #EDE9E3;
+  --vp-c-text-2: #A8A29E;
+  --vp-c-text-3: #6B6963;
 
-  --vp-c-border: #3A3A36;
-  --vp-c-border-hard: #4A4A44;
-  --vp-c-gutter: #2A2A27;
+  --vp-c-border: #3A3835;
+  --vp-c-border-hard: #4A4844;
+  --vp-c-gutter: #2C2B27;
 
-  --sop-accent: #3AB894;
-  --sop-accent-light: #4EC9A5;
-  --sop-accent-soft: rgba(58, 184, 148, 0.1);
-  --sop-accent-glow: rgba(58, 184, 148, 0.12);
-  --sop-warm-bg: #1A1A18;
-  --sop-warm-surface: #222220;
-  --sop-warm-border: #3A3A36;
+  --sop-accent: #2DD4BF;
+  --sop-accent-hover: #5EEAD4;
+  --sop-accent-soft: rgba(45, 212, 191, 0.08);
+  --sop-accent-glow: rgba(45, 212, 191, 0.12);
+  --sop-accent-deep: #14B8A6;
+  --sop-warm-bg: #1A1917;
+  --sop-warm-surface: #232320;
+  --sop-warm-border: #3A3835;
+
+  --badge-progress-bg: rgba(45, 212, 191, 0.12);
+  --badge-progress-text: #2DD4BF;
+  --badge-progress-border: rgba(45, 212, 191, 0.25);
+  --badge-upcoming-bg: rgba(168, 162, 158, 0.10);
+  --badge-upcoming-text: #A8A29E;
+  --badge-upcoming-border: rgba(168, 162, 158, 0.20);
+
+  --sop-pattern-color: rgba(45, 212, 191, 0.06);
 }
 
 /* ============================================================
@@ -105,14 +124,13 @@ body {
 .vp-doc h3,
 .vp-doc h4 {
   font-family: var(--sop-heading-font);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: -0.01em;
   color: var(--vp-c-text-1);
 }
 
 .vp-doc h1 {
   font-size: 2.25rem;
-  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
@@ -141,19 +159,44 @@ body {
 }
 
 /* ============================================================
+   Geometric Header Pattern — Islamic arch motif
+   ============================================================ */
+.VPNav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--sop-accent) 0px,
+      var(--sop-accent) 8px,
+      transparent 8px,
+      transparent 12px,
+      var(--sop-accent-soft) 12px,
+      var(--sop-accent-soft) 16px,
+      transparent 16px,
+      transparent 24px
+    );
+  z-index: 100;
+}
+
+/* ============================================================
    Navigation Bar
    ============================================================ */
 .VPNav {
-  background-color: var(--vp-c-bg-soft) !important;
+  background-color: var(--vp-c-bg-soft);
 }
 
 .VPNavBar {
-  border-bottom: 1px solid var(--sop-warm-border) !important;
+  border-bottom: 1px solid var(--sop-warm-border);
 }
 
 .VPNavBarTitle .title {
   font-family: var(--sop-heading-font);
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.15rem;
   color: var(--vp-c-text-1);
   letter-spacing: -0.01em;
@@ -163,7 +206,7 @@ body {
   font-family: var(--sop-body-font);
   font-weight: 500;
   letter-spacing: 0.01em;
-  transition: color 0.15s ease;
+  transition: color 0.2s ease;
 }
 
 .VPNavBarMenu .link:hover {
@@ -179,7 +222,7 @@ body {
    ============================================================ */
 .VPHome {
   background:
-    linear-gradient(180deg, var(--sop-accent-soft) 0%, transparent 50%),
+    linear-gradient(180deg, var(--sop-accent-soft) 0%, transparent 40%),
     var(--vp-c-bg);
 }
 
@@ -187,72 +230,92 @@ body {
   position: relative;
 }
 
+/* Decorative geometric pattern behind hero */
 .VPHero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 600px;
-  height: 400px;
-  background: radial-gradient(
-    ellipse at center,
-    var(--sop-accent-glow) 0%,
-    transparent 70%
-  );
+  top: -40px;
+  right: -60px;
+  width: 320px;
+  height: 320px;
+  background:
+    repeating-conic-gradient(
+      var(--sop-pattern-color) 0% 25%,
+      transparent 0% 50%
+    ) 0 0 / 40px 40px;
+  border-radius: 50%;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.VPHero::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  background:
+    repeating-conic-gradient(
+      var(--sop-pattern-color) 0% 25%,
+      transparent 0% 50%
+    ) 0 0 / 28px 28px;
+  border-radius: 50%;
+  opacity: 0.4;
   pointer-events: none;
   z-index: 0;
 }
 
 .VPHero .name {
-  font-family: var(--sop-heading-font) !important;
-  font-weight: 700 !important;
-  font-size: 3.2rem !important;
-  letter-spacing: -0.02em !important;
-  color: var(--vp-c-brand-1) !important;
+  font-family: var(--sop-heading-font);
+  font-weight: 400;
+  font-size: 3.2rem;
+  letter-spacing: -0.02em;
+  color: var(--vp-c-brand-1);
 }
 
 .VPHero .text {
-  font-family: var(--sop-body-font) !important;
-  font-weight: 600 !important;
-  color: var(--vp-c-text-1) !important;
-  line-height: 1.3 !important;
+  font-family: var(--sop-body-font);
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  line-height: 1.3;
 }
 
 .VPHero .tagline {
-  font-family: var(--sop-body-font) !important;
-  color: var(--vp-c-text-2) !important;
-  line-height: 1.5 !important;
+  font-family: var(--sop-body-font);
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
 }
 
 .VPHero .action .VPButton.brand {
-  background-color: var(--vp-c-brand-1) !important;
-  border-color: var(--vp-c-brand-1) !important;
-  font-family: var(--sop-body-font) !important;
-  font-weight: 600 !important;
-  border-radius: var(--sop-radius) !important;
-  transition: all 0.2s ease !important;
+  background-color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+  font-family: var(--sop-body-font);
+  font-weight: 600;
+  border-radius: var(--sop-radius);
+  transition: all 0.25s ease;
 }
 
 .VPHero .action .VPButton.brand:hover {
-  background-color: var(--vp-c-brand-2) !important;
-  border-color: var(--vp-c-brand-2) !important;
+  background-color: var(--vp-c-brand-2);
+  border-color: var(--vp-c-brand-2);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px var(--sop-accent-glow);
+  box-shadow: 0 4px 16px var(--sop-accent-glow);
 }
 
 .VPHero .action .VPButton.alt {
-  font-family: var(--sop-body-font) !important;
-  font-weight: 500 !important;
-  border-radius: var(--sop-radius) !important;
-  border-color: var(--sop-warm-border) !important;
-  color: var(--vp-c-text-2) !important;
-  transition: all 0.2s ease !important;
+  font-family: var(--sop-body-font);
+  font-weight: 500;
+  border-radius: var(--sop-radius);
+  border-color: var(--sop-warm-border);
+  color: var(--vp-c-text-2);
+  transition: all 0.25s ease;
 }
 
 .VPHero .action .VPButton.alt:hover {
-  border-color: var(--vp-c-brand-1) !important;
-  color: var(--vp-c-brand-1) !important;
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
 }
 
 /* ============================================================
@@ -263,24 +326,42 @@ body {
   border-radius: var(--sop-radius-lg);
   padding: 1.5rem;
   background-color: var(--vp-c-bg);
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.VPFeature .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--sop-accent);
+  border-radius: var(--sop-radius-lg) var(--sop-radius-lg) 0 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .VPFeature .box:hover {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 4px 16px var(--sop-accent-glow);
+  border-color: var(--sop-accent);
+  box-shadow: 0 6px 24px var(--sop-accent-glow);
   transform: translateY(-2px);
 }
 
+.VPFeature .box:hover::before {
+  opacity: 1;
+}
+
 .VPFeature .title {
-  font-family: var(--sop-heading-font) !important;
-  font-weight: 600 !important;
-  font-size: 1.1rem !important;
+  font-family: var(--sop-heading-font);
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .VPFeature .details {
-  color: var(--vp-c-text-2) !important;
-  line-height: 1.6 !important;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
 }
 
 /* ============================================================
@@ -292,7 +373,7 @@ body {
 
 .VPSidebar .group-title {
   font-family: var(--sop-heading-font);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
   text-transform: none;
@@ -301,11 +382,11 @@ body {
 
 .VPSidebar .link {
   font-family: var(--sop-body-font);
-  transition: color 0.15s ease, background-color 0.15s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .VPSidebar .link.active {
-  color: var(--vp-c-brand-1) !important;
+  color: var(--vp-c-brand-1);
   font-weight: 600;
 }
 
@@ -314,7 +395,7 @@ body {
 }
 
 .VPSidebar .link.active::before {
-  background-color: var(--vp-c-brand-1) !important;
+  background-color: var(--vp-c-brand-1);
 }
 
 .VPSidebar .group > .items {
@@ -331,11 +412,14 @@ body {
 .vp-doc a {
   color: var(--vp-c-brand-1);
   text-decoration: none;
-  transition: color 0.15s ease;
+  transition: color 0.2s ease;
+  text-decoration-skip-ink: auto;
 }
 
 .vp-doc a:hover {
   color: var(--vp-c-brand-2);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .vp-doc strong {
@@ -361,7 +445,7 @@ body {
 .vp-doc th {
   background-color: var(--sop-warm-surface);
   font-family: var(--sop-heading-font);
-  font-weight: 600;
+  font-weight: 400;
   text-align: left;
   padding: 0.75rem 1rem;
   border-bottom: 2px solid var(--sop-warm-border);
@@ -390,7 +474,7 @@ body {
 .vp-doc div[class*='language-'] {
   border-radius: var(--sop-radius-lg);
   border: 1px solid var(--sop-warm-border);
-  background-color: var(--vp-c-bg-soft) !important;
+  background-color: var(--vp-c-bg-soft);
 }
 
 .vp-doc code {
@@ -408,7 +492,7 @@ body {
 }
 
 .dark .vp-doc :not(pre) > code {
-  background-color: rgba(58, 184, 148, 0.12);
+  background-color: rgba(45, 212, 191, 0.10);
   color: var(--vp-c-brand-1);
 }
 
@@ -431,7 +515,7 @@ body {
 
 .vp-doc .custom-block .custom-block-title {
   font-family: var(--sop-heading-font);
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.05rem;
 }
 
@@ -446,16 +530,16 @@ body {
 
 .vp-doc .custom-block.info {
   background-color: rgba(59, 130, 246, 0.06);
-  border-color: rgba(59, 130, 246, 0.35);
+  border-color: rgba(59, 130, 246, 0.30);
 }
 
 .vp-doc .custom-block.info .custom-block-title {
-  color: #3B82F6;
+  color: #2563EB;
 }
 
 .dark .vp-doc .custom-block.info {
   background-color: rgba(96, 165, 250, 0.08);
-  border-color: rgba(96, 165, 250, 0.3);
+  border-color: rgba(96, 165, 250, 0.25);
 }
 
 .dark .vp-doc .custom-block.info .custom-block-title {
@@ -463,35 +547,35 @@ body {
 }
 
 .vp-doc .custom-block.warning {
-  background-color: rgba(202, 138, 4, 0.06);
-  border-color: rgba(202, 138, 4, 0.35);
+  background-color: rgba(180, 83, 9, 0.06);
+  border-color: rgba(180, 83, 9, 0.30);
 }
 
 .vp-doc .custom-block.warning .custom-block-title {
-  color: #CA8A04;
+  color: #B45309;
 }
 
 .dark .vp-doc .custom-block.warning {
-  background-color: rgba(234, 179, 8, 0.08);
-  border-color: rgba(234, 179, 8, 0.3);
+  background-color: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.25);
 }
 
 .dark .vp-doc .custom-block.warning .custom-block-title {
-  color: #EAB308;
+  color: #F59E0B;
 }
 
 .vp-doc .custom-block.danger {
-  background-color: rgba(220, 38, 38, 0.06);
-  border-color: rgba(220, 38, 38, 0.35);
+  background-color: rgba(185, 28, 28, 0.06);
+  border-color: rgba(185, 28, 28, 0.30);
 }
 
 .vp-doc .custom-block.danger .custom-block-title {
-  color: #DC2626;
+  color: #B91C1C;
 }
 
 .dark .vp-doc .custom-block.danger {
   background-color: rgba(248, 113, 113, 0.08);
-  border-color: rgba(248, 113, 113, 0.3);
+  border-color: rgba(248, 113, 113, 0.25);
 }
 
 .dark .vp-doc .custom-block.danger .custom-block-title {
@@ -502,14 +586,14 @@ body {
    Footer
    ============================================================ */
 .VPFooter {
-  background-color: var(--vp-c-bg-soft) !important;
-  border-top: 1px solid var(--sop-warm-border) !important;
+  background-color: var(--vp-c-bg-soft);
+  border-top: 1px solid var(--sop-warm-border);
 }
 
 .VPFooter .message {
   font-family: var(--sop-body-font);
   font-size: 0.85rem;
-  color: var(--vp-c-text-2) !important;
+  color: var(--vp-c-text-2);
 }
 
 /* ============================================================
@@ -518,12 +602,12 @@ body {
 .VPDocFooter .pager-link {
   border-color: var(--sop-warm-border);
   border-radius: var(--sop-radius);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .VPDocFooter .pager-link:hover {
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 2px 10px var(--sop-accent-glow);
+  box-shadow: 0 2px 12px var(--sop-accent-glow);
 }
 
 .VPDocFooter .pager-link .title {
@@ -535,7 +619,7 @@ body {
    ============================================================ */
 .VPDocAsideOutline .outline-link {
   font-family: var(--sop-body-font);
-  transition: color 0.15s ease;
+  transition: color 0.2s ease;
 }
 
 .VPDocAsideOutline .outline-link.active {
@@ -602,7 +686,7 @@ body {
    Social Links & Nav Items
    ============================================================ */
 .VPSocialLink {
-  transition: color 0.15s ease;
+  transition: color 0.2s ease;
 }
 
 .VPSocialLink:hover {
@@ -614,6 +698,158 @@ body {
    ============================================================ */
 .VPSwitch {
   border-color: var(--sop-warm-border);
+}
+
+/* ============================================================
+   Status Badges
+   ============================================================ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.15em 0.6em;
+  border-radius: 9999px;
+  font-family: var(--sop-body-font);
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid;
+}
+
+.badge-progress {
+  background-color: var(--badge-progress-bg);
+  color: var(--badge-progress-text);
+  border-color: var(--badge-progress-border);
+}
+
+.badge-progress .badge-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--badge-progress-text);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.badge-upcoming {
+  background-color: var(--badge-upcoming-bg);
+  color: var(--badge-upcoming-text);
+  border-color: var(--badge-upcoming-border);
+}
+
+.badge-upcoming .badge-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--badge-upcoming-text);
+  opacity: 0.5;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* ============================================================
+   Home Page — Audience Cards
+   ============================================================ */
+.audience-card {
+  border: 1px solid var(--sop-warm-border);
+  border-radius: var(--sop-radius-lg);
+  padding: 1.5rem;
+  background-color: var(--vp-c-bg);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audience-card:hover {
+  border-color: var(--sop-accent);
+  box-shadow: 0 4px 20px var(--sop-accent-glow);
+}
+
+.audience-card h3 {
+  font-family: var(--sop-heading-font);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--vp-c-text-1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.audience-card h3 svg {
+  flex-shrink: 0;
+  color: var(--sop-accent);
+}
+
+.audience-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.audience-card li {
+  padding: 0.3rem 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.audience-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--sop-accent);
+  opacity: 0.6;
+}
+
+/* ============================================================
+   Paket Status Section
+   ============================================================ */
+.paket-card {
+  border: 1px solid var(--sop-warm-border);
+  border-radius: var(--sop-radius-lg);
+  padding: 1.5rem;
+  background-color: var(--vp-c-bg);
+  margin-bottom: 1.25rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paket-card:hover {
+  border-color: var(--sop-accent);
+  box-shadow: 0 4px 20px var(--sop-accent-glow);
+}
+
+.paket-card h3 {
+  font-family: var(--sop-heading-font);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--vp-c-text-1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.paket-card p {
+  color: var(--vp-c-text-2);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.paket-card strong {
+  color: var(--vp-c-text-1);
 }
 
 /* ============================================================
@@ -633,7 +869,21 @@ body {
   }
 
   .VPHero .name {
-    font-size: 2.4rem !important;
+    font-size: 2.4rem;
+  }
+
+  .VPHero::before {
+    width: 180px;
+    height: 180px;
+    top: -20px;
+    right: -30px;
+  }
+
+  .VPHero::after {
+    width: 120px;
+    height: 120px;
+    bottom: -10px;
+    left: -20px;
   }
 }
 
@@ -645,15 +895,15 @@ body {
   .VPSidebar,
   .VPDocAside,
   .VPFooter {
-    display: none !important;
+    display: none;
   }
 
   .vp-doc {
-    max-width: 100% !important;
+    max-width: 100%;
   }
 
   body {
-    background: white !important;
-    color: black !important;
+    background: white;
+    color: black;
   }
 }
