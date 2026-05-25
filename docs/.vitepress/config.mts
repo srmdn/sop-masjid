@@ -18,7 +18,7 @@ export default defineConfig({
     sidebar: {
       "/paket/mushola-starter/": [
         {
-          text: "Mushola Starter",
+          text: "Paket Mushola Starter",
           items: [
             { text: "Ringkasan", link: "/paket/mushola-starter/" },
             { text: "Panduan Mulai", link: "/paket/mushola-starter/panduan-mulai" },

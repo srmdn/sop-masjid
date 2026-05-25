@@ -11,17 +11,21 @@ Toolkit SOP, template, dan checklist operasional masjid/mushola — open source,
 
 ## Mulai dari Mana?
 
-Kunjungi [Mulai di Sini](https://srmdn.github.io/sop-masjid/mulai) — pilih paket sesuai ukuran masjid/mushola kamu.
+Kunjungi [Mulai di Sini](https://srmdn.github.io/sop-masjid/mulai) — pilih paket sesuai kebutuhan operasional masjid/mushola kamu.
 
 ## Paket
 
-| Paket | Status |
-|---|---|
-| [Mushola Starter](https://srmdn.github.io/sop-masjid/paket/mushola-starter/) | 🚧 v0.1 |
-| Masjid Kampung Basic | 🔜 v0.2 |
-| Keuangan Masjid Kit | 🔜 v0.3 |
-| Ramadhan Kit | 🔜 |
-| Kurban Kit | 🔜 |
+| Paket | Untuk | Versi |
+|---|---|---|
+| [Paket Mushola Starter](https://srmdn.github.io/sop-masjid/paket/mushola-starter/) | Mushola/surau kecil, pengurus terbatas | v0.1 |
+| Paket Masjid Dasar | Masjid dengan operasional rutin | v0.2 |
+| Paket Keuangan Masjid | Semua jenis (modul tambahan) | v0.3 |
+| Paket Ramadhan | Kegiatan musiman Ramadhan | v0.4 |
+| Paket Kurban | Kegiatan musiman kurban | v0.4 |
+| Paket Masjid Aktif | Masjid dengan kegiatan rutin | v0.5 |
+| Paket Masjid Lengkap | Masjid dengan tata kelola lengkap | v0.6 |
+| Paket Digital Admin | Administrasi digital | v0.6 |
+| Paket Serah Terima Pengurus | Proses serah-terima | v0.6 |
 
 ## Lisensi
 

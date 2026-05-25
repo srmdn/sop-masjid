@@ -25,8 +25,8 @@ Semua konten bisa diakses langsung dari website ini. Kamu tidak perlu install at
 
 | Paket | Untuk | Status |
 |---|---|---|
-| [Mushola Starter](/paket/mushola-starter/) | Mushola kecil, mushala kantor, mushola RW | <span class="badge badge-progress"><span class="badge-dot"></span>v0.1</span> |
-| Masjid Kampung Basic | Masjid kampung, masjid lingkungan | <span class="badge badge-upcoming"><span class="badge-dot"></span>v0.2</span> |
-| Keuangan Masjid Kit | Semua jenis (modul tambahan) | <span class="badge badge-upcoming"><span class="badge-dot"></span>v0.3</span> |
+| [Paket Mushola Starter](/paket/mushola-starter/) | Mushola/surau kecil, pengurus terbatas | <span class="badge badge-progress"><span class="badge-dot"></span>v0.1</span> |
+| Paket Masjid Dasar | Masjid dengan operasional rutin | <span class="badge badge-upcoming"><span class="badge-dot"></span>v0.2</span> |
+| Paket Keuangan Masjid | Semua jenis (modul tambahan) | <span class="badge badge-upcoming"><span class="badge-dot"></span>v0.3</span> |
 
-Bingung mulai dari mana? Mulai dari [Mushola Starter](/paket/mushola-starter/) — paket paling sederhana yang cocok untuk hampir semua mushola.
+Bingung mulai dari mana? Mulai dari [Paket Mushola Starter](/paket/mushola-starter/) — paket paling sederhana yang cocok untuk hampir semua mushola.

@@ -1,11 +1,12 @@
-# Mushola Starter
+# Paket Mushola Starter
 
-Paket dasar untuk mushola kecil yang ingin mendokumentasikan operasional harian.
+Paket dasar untuk mushola/surau kecil dengan pengurus terbatas dan kebutuhan administrasi sederhana.
 
 ## Cocok Untuk
 
 - Mushola di perkantoran
 - Mushola RW/RT
+- Surau kecil
 - Mushola di sekolah/kampus kecil
 - Masjid kecil yang baru mulai tertib administrasi
 
