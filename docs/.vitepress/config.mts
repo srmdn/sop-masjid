@@ -6,6 +6,10 @@ export default defineConfig({
     "Toolkit SOP, template, dan checklist operasional masjid/mushola",
   lang: "id-ID",
   base: "/sop-masjid/",
+  ignoreDeadLinks: [
+    /\/template\/.*\.xlsx$/,
+    /\/template\/.*\.csv$/,
+  ],
 
   themeConfig: {
     nav: [

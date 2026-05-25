@@ -4,18 +4,13 @@ Template spreadsheet untuk mencatat dan mengatur jadwal imam, muadzin, dan khati
 
 ## Cara Dapatkan
 
-### Download CSV
+### Download
 
-1. Download file CSV di bawah
-2. Buka [Google Sheets](https://sheets.google.com) → **File → Import → Upload**
-3. Pilih file CSV → **Import data**
-4. Ulangi untuk sheet kedua
-5. Mulai isi jadwal
+Download file Excel di bawah — langsung buka di Excel, WPS, atau import ke Google Sheets.
 
-| Sheet | Download |
+| Template | Download |
 |---|---|
-| Jadwal Harian | [jadwal-imam-harian.csv](/template/jadwal-imam-harian.csv) |
-| Daftar Petugas | [jadwal-imam-petugas.csv](/template/jadwal-imam-petugas.csv) |
+| Jadwal Imam/Muadzin (2 sheet) | [jadwal-imam-muadzin.xlsx](/template/jadwal-imam-muadzin.xlsx) |
 
 ## Struktur Template
 

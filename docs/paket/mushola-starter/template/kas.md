@@ -4,18 +4,13 @@ Template spreadsheet untuk mencatat pemasukan dan pengeluaran kas mushola secara
 
 ## Cara Dapatkan
 
-### Download CSV
+### Download
 
-1. Download file CSV di bawah
-2. Buka [Google Sheets](https://sheets.google.com) → **File → Import → Upload**
-3. Pilih file CSV → **Import data**
-4. Ulangi untuk sheet kedua
-5. Mulai catat transaksi
+Download file Excel di bawah — langsung buka di Excel, WPS, atau import ke Google Sheets.
 
-| Sheet | Download |
+| Template | Download |
 |---|---|
-| Buku Kas Harian | [kas-harian.csv](/template/kas-harian.csv) |
-| Rekap Bulanan | [kas-rekap.csv](/template/kas-rekap.csv) |
+| Kas Masuk-Keluar (2 sheet) | [kas-masuk-keluar.xlsx](/template/kas-masuk-keluar.xlsx) |
 
 ## Struktur Template
 
