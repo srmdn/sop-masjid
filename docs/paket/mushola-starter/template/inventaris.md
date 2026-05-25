@@ -4,7 +4,7 @@ Template spreadsheet untuk mencatat dan melacak inventaris barang milik mushola.
 
 ## Cara Dapatkan
 
-### Opsi 1: Download CSV (langsung pakai)
+### Download CSV
 
 1. Download file CSV di bawah
 2. Buka [Google Sheets](https://sheets.google.com) → **File → Import → Upload**
@@ -16,14 +16,6 @@ Template spreadsheet untuk mencatat dan melacak inventaris barang milik mushola.
 |---|---|
 | Daftar Inventaris | [inventaris-daftar.csv](/template/inventaris-daftar.csv) |
 | Log Perubahan | [inventaris-log.csv](/template/inventaris-log.csv) |
-
-### Opsi 2: Google Sheet template *(segera hadir)*
-
-::: info Template Google Sheet siap pakai
-Template Google Sheet yang bisa langsung disalin dengan **File → Buat Salinan** akan tersedia segera.
-
-Sementara itu, gunakan Opsi 1 (CSV) di atas — hasilnya sama.
-:::
 
 ## Struktur Template
 
