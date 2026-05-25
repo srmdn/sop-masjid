@@ -1,0 +1,659 @@
+/* ============================================================
+   SOP Masjid — Custom VitePress Theme
+   
+   Aesthetic: Warm, approachable, Islamic-inspired modern docs.
+   Typography: Cormorant Garamond (headings) + Source Sans 3 (body)
+   Accent: Deep emerald green (#1A7A5C) — grounded, Islamic, professional
+   Background: Warm cream (#FAF9F5) — not flat white
+   ============================================================ */
+
+/* --- Favicon Placeholder ---
+   Add a favicon.ico or favicon.svg to docs/public/ when ready.
+   VitePress serves files from docs/public/ at the site root automatically.
+   Recommended: create docs/public/favicon.svg with a mosque/mimbar icon.
+--- */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* ============================================================
+   Design Tokens — Light Mode
+   ============================================================ */
+:root {
+  /* Brand / Accent — Deep emerald green */
+  --vp-c-brand-1: #1A7A5C;
+  --vp-c-brand-2: #22946E;
+  --vp-c-brand-3: #2AAA80;
+  --vp-c-brand-soft: rgba(26, 122, 92, 0.14);
+
+  /* Backgrounds — Warm cream */
+  --vp-c-bg: #FAF9F5;
+  --vp-c-bg-soft: #F3F1EB;
+  --vp-c-bg-mute: #EBE8E0;
+  --vp-c-bg-alt: #F5F3ED;
+
+  /* Text — Warm neutrals */
+  --vp-c-text-1: #2D2B27;
+  --vp-c-text-2: #6B6860;
+  --vp-c-text-3: #9A9689;
+
+  /* Borders */
+  --vp-c-border: #DDD9CF;
+  --vp-c-border-hard: #C8C3B8;
+  --vp-c-gutter: #EBE8E0;
+
+  /* Fonts */
+  --vp-font-family-base: 'Source Sans 3', 'Source Sans Pro', system-ui, -apple-system, sans-serif;
+  --vp-font-family-mono: ui-monospace, SFMono-Regular, 'Fira Code', 'JetBrains Mono', Menlo, monospace;
+
+  /* Custom tokens */
+  --sop-accent: #1A7A5C;
+  --sop-accent-light: #22946E;
+  --sop-accent-soft: rgba(26, 122, 92, 0.08);
+  --sop-accent-glow: rgba(26, 122, 92, 0.15);
+  --sop-heading-font: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+  --sop-body-font: 'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
+  --sop-warm-bg: #FAF9F5;
+  --sop-warm-surface: #F3F1EB;
+  --sop-warm-border: #DDD9CF;
+  --sop-radius: 6px;
+  --sop-radius-lg: 10px;
+}
+
+/* ============================================================
+   Design Tokens — Dark Mode
+   ============================================================ */
+.dark {
+  --vp-c-brand-1: #3AB894;
+  --vp-c-brand-2: #4EC9A5;
+  --vp-c-brand-3: #5DD5B3;
+  --vp-c-brand-soft: rgba(58, 184, 148, 0.14);
+
+  --vp-c-bg: #1A1A18;
+  --vp-c-bg-soft: #222220;
+  --vp-c-bg-mute: #2A2A27;
+  --vp-c-bg-alt: #1E1E1C;
+
+  --vp-c-text-1: #E8E6E0;
+  --vp-c-text-2: #A8A498;
+  --vp-c-text-3: #7A766C;
+
+  --vp-c-border: #3A3A36;
+  --vp-c-border-hard: #4A4A44;
+  --vp-c-gutter: #2A2A27;
+
+  --sop-accent: #3AB894;
+  --sop-accent-light: #4EC9A5;
+  --sop-accent-soft: rgba(58, 184, 148, 0.1);
+  --sop-accent-glow: rgba(58, 184, 148, 0.12);
+  --sop-warm-bg: #1A1A18;
+  --sop-warm-surface: #222220;
+  --sop-warm-border: #3A3A36;
+}
+
+/* ============================================================
+   Base Typography
+   ============================================================ */
+body {
+  font-family: var(--vp-font-family-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4 {
+  font-family: var(--sop-heading-font);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.vp-doc h2 {
+  font-size: 1.65rem;
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--sop-warm-border);
+}
+
+.vp-doc h3 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-top: 2rem;
+}
+
+.vp-doc h4 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.vp-doc p {
+  line-height: 1.75;
+}
+
+/* ============================================================
+   Navigation Bar
+   ============================================================ */
+.VPNav {
+  background-color: var(--vp-c-bg-soft) !important;
+}
+
+.VPNavBar {
+  border-bottom: 1px solid var(--sop-warm-border) !important;
+}
+
+.VPNavBarTitle .title {
+  font-family: var(--sop-heading-font);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--vp-c-text-1);
+  letter-spacing: -0.01em;
+}
+
+.VPNavBarMenu .link {
+  font-family: var(--sop-body-font);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: color 0.15s ease;
+}
+
+.VPNavBarMenu .link:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.VPNavBarMenu .link.active {
+  color: var(--vp-c-brand-1);
+}
+
+/* ============================================================
+   Hero Section — Home Page
+   ============================================================ */
+.VPHome {
+  background:
+    linear-gradient(180deg, var(--sop-accent-soft) 0%, transparent 50%),
+    var(--vp-c-bg);
+}
+
+.VPHero {
+  position: relative;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(
+    ellipse at center,
+    var(--sop-accent-glow) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.VPHero .name {
+  font-family: var(--sop-heading-font) !important;
+  font-weight: 700 !important;
+  font-size: 3.2rem !important;
+  letter-spacing: -0.02em !important;
+  color: var(--vp-c-brand-1) !important;
+}
+
+.VPHero .text {
+  font-family: var(--sop-body-font) !important;
+  font-weight: 600 !important;
+  color: var(--vp-c-text-1) !important;
+  line-height: 1.3 !important;
+}
+
+.VPHero .tagline {
+  font-family: var(--sop-body-font) !important;
+  color: var(--vp-c-text-2) !important;
+  line-height: 1.5 !important;
+}
+
+.VPHero .action .VPButton.brand {
+  background-color: var(--vp-c-brand-1) !important;
+  border-color: var(--vp-c-brand-1) !important;
+  font-family: var(--sop-body-font) !important;
+  font-weight: 600 !important;
+  border-radius: var(--sop-radius) !important;
+  transition: all 0.2s ease !important;
+}
+
+.VPHero .action .VPButton.brand:hover {
+  background-color: var(--vp-c-brand-2) !important;
+  border-color: var(--vp-c-brand-2) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px var(--sop-accent-glow);
+}
+
+.VPHero .action .VPButton.alt {
+  font-family: var(--sop-body-font) !important;
+  font-weight: 500 !important;
+  border-radius: var(--sop-radius) !important;
+  border-color: var(--sop-warm-border) !important;
+  color: var(--vp-c-text-2) !important;
+  transition: all 0.2s ease !important;
+}
+
+.VPHero .action .VPButton.alt:hover {
+  border-color: var(--vp-c-brand-1) !important;
+  color: var(--vp-c-brand-1) !important;
+}
+
+/* ============================================================
+   Feature Cards
+   ============================================================ */
+.VPFeature .box {
+  border: 1px solid var(--sop-warm-border);
+  border-radius: var(--sop-radius-lg);
+  padding: 1.5rem;
+  background-color: var(--vp-c-bg);
+  transition: all 0.25s ease;
+}
+
+.VPFeature .box:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 16px var(--sop-accent-glow);
+  transform: translateY(-2px);
+}
+
+.VPFeature .title {
+  font-family: var(--sop-heading-font) !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+}
+
+.VPFeature .details {
+  color: var(--vp-c-text-2) !important;
+  line-height: 1.6 !important;
+}
+
+/* ============================================================
+   Sidebar
+   ============================================================ */
+.VPSidebar {
+  font-family: var(--sop-body-font);
+}
+
+.VPSidebar .group-title {
+  font-family: var(--sop-heading-font);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--vp-c-text-1);
+}
+
+.VPSidebar .link {
+  font-family: var(--sop-body-font);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.VPSidebar .link.active {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600;
+}
+
+.VPSidebar .link:hover {
+  color: var(--vp-c-brand-2);
+}
+
+.VPSidebar .link.active::before {
+  background-color: var(--vp-c-brand-1) !important;
+}
+
+.VPSidebar .group > .items {
+  border-left-color: var(--sop-warm-border);
+}
+
+/* ============================================================
+   Content Area
+   ============================================================ */
+.VPContent {
+  background-color: var(--vp-c-bg);
+}
+
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+.vp-doc strong {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+}
+
+.vp-doc ul,
+.vp-doc ol {
+  line-height: 1.75;
+}
+
+/* ============================================================
+   Tables
+   ============================================================ */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.vp-doc th {
+  background-color: var(--sop-warm-surface);
+  font-family: var(--sop-heading-font);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--sop-warm-border);
+  color: var(--vp-c-text-1);
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+}
+
+.vp-doc td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--sop-warm-border);
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc tr:hover td {
+  background-color: var(--sop-accent-soft);
+}
+
+.vp-doc tr:last-child td {
+  border-bottom: none;
+}
+
+/* ============================================================
+   Code Blocks
+   ============================================================ */
+.vp-doc div[class*='language-'] {
+  border-radius: var(--sop-radius-lg);
+  border: 1px solid var(--sop-warm-border);
+  background-color: var(--vp-c-bg-soft) !important;
+}
+
+.vp-doc code {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.875em;
+}
+
+.vp-doc :not(pre) > code {
+  background-color: var(--sop-accent-soft);
+  color: var(--vp-c-brand-1);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 0.875em;
+}
+
+.dark .vp-doc :not(pre) > code {
+  background-color: rgba(58, 184, 148, 0.12);
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc div[class*='language-'] > .lang {
+  color: var(--vp-c-text-3);
+  font-family: var(--sop-body-font);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================================
+   Admonitions / Custom Containers
+   ============================================================ */
+.vp-doc .custom-block {
+  border-radius: var(--sop-radius);
+  padding: 1rem 1.25rem;
+}
+
+.vp-doc .custom-block .custom-block-title {
+  font-family: var(--sop-heading-font);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.vp-doc .custom-block.tip {
+  border-color: var(--vp-c-brand-1);
+  background-color: var(--sop-accent-soft);
+}
+
+.vp-doc .custom-block.tip .custom-block-title {
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc .custom-block.info {
+  background-color: rgba(59, 130, 246, 0.06);
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+.vp-doc .custom-block.info .custom-block-title {
+  color: #3B82F6;
+}
+
+.dark .vp-doc .custom-block.info {
+  background-color: rgba(96, 165, 250, 0.08);
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+.dark .vp-doc .custom-block.info .custom-block-title {
+  color: #60A5FA;
+}
+
+.vp-doc .custom-block.warning {
+  background-color: rgba(202, 138, 4, 0.06);
+  border-color: rgba(202, 138, 4, 0.35);
+}
+
+.vp-doc .custom-block.warning .custom-block-title {
+  color: #CA8A04;
+}
+
+.dark .vp-doc .custom-block.warning {
+  background-color: rgba(234, 179, 8, 0.08);
+  border-color: rgba(234, 179, 8, 0.3);
+}
+
+.dark .vp-doc .custom-block.warning .custom-block-title {
+  color: #EAB308;
+}
+
+.vp-doc .custom-block.danger {
+  background-color: rgba(220, 38, 38, 0.06);
+  border-color: rgba(220, 38, 38, 0.35);
+}
+
+.vp-doc .custom-block.danger .custom-block-title {
+  color: #DC2626;
+}
+
+.dark .vp-doc .custom-block.danger {
+  background-color: rgba(248, 113, 113, 0.08);
+  border-color: rgba(248, 113, 113, 0.3);
+}
+
+.dark .vp-doc .custom-block.danger .custom-block-title {
+  color: #F87171;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.VPFooter {
+  background-color: var(--vp-c-bg-soft) !important;
+  border-top: 1px solid var(--sop-warm-border) !important;
+}
+
+.VPFooter .message {
+  font-family: var(--sop-body-font);
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2) !important;
+}
+
+/* ============================================================
+   Prev / Next Navigation
+   ============================================================ */
+.VPDocFooter .pager-link {
+  border-color: var(--sop-warm-border);
+  border-radius: var(--sop-radius);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.VPDocFooter .pager-link:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 2px 10px var(--sop-accent-glow);
+}
+
+.VPDocFooter .pager-link .title {
+  font-family: var(--sop-body-font);
+}
+
+/* ============================================================
+   Outline (Table of Contents)
+   ============================================================ */
+.VPDocAsideOutline .outline-link {
+  font-family: var(--sop-body-font);
+  transition: color 0.15s ease;
+}
+
+.VPDocAsideOutline .outline-link.active {
+  color: var(--vp-c-brand-1);
+}
+
+/* ============================================================
+   Local Nav
+   ============================================================ */
+.VPLocalNav {
+  border-bottom-color: var(--sop-warm-border);
+}
+
+/* ============================================================
+   Scrollbar
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-bg-mute);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-c-bg-mute) var(--vp-c-bg-soft);
+}
+
+/* ============================================================
+   Selection
+   ============================================================ */
+::selection {
+  background-color: var(--sop-accent-glow);
+  color: var(--vp-c-text-1);
+}
+
+/* ============================================================
+   Search
+   ============================================================ */
+.VPNavBarSearch .search-button {
+  border-radius: var(--sop-radius);
+  border: 1px solid var(--sop-warm-border);
+  background-color: var(--vp-c-bg-soft);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.VPNavBarSearch .search-button:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 2px 8px var(--sop-accent-glow);
+}
+
+/* ============================================================
+   Social Links & Nav Items
+   ============================================================ */
+.VPSocialLink {
+  transition: color 0.15s ease;
+}
+
+.VPSocialLink:hover {
+  color: var(--vp-c-brand-1);
+}
+
+/* ============================================================
+   Dark Mode Toggle
+   ============================================================ */
+.VPSwitch {
+  border-color: var(--sop-warm-border);
+}
+
+/* ============================================================
+   Responsive Adjustments
+   ============================================================ */
+@media (max-width: 768px) {
+  .vp-doc h1 {
+    font-size: 1.75rem;
+  }
+
+  .vp-doc h2 {
+    font-size: 1.4rem;
+  }
+
+  .vp-doc h3 {
+    font-size: 1.15rem;
+  }
+
+  .VPHero .name {
+    font-size: 2.4rem !important;
+  }
+}
+
+/* ============================================================
+   Print Styles
+   ============================================================ */
+@media print {
+  .VPNav,
+  .VPSidebar,
+  .VPDocAside,
+  .VPFooter {
+    display: none !important;
+  }
+
+  .vp-doc {
+    max-width: 100% !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
