@@ -2,15 +2,11 @@
 
 Template spreadsheet untuk mencatat dan melacak inventaris barang milik mushola. Catat dari kipas angin sampai gayung — semuanya.
 
-## Cara Dapatkan
+## Ketersediaan
 
-### Download
-
-Download file Excel di bawah — langsung buka di Excel, WPS, atau import ke Google Sheets.
-
-| Template | Download |
-|---|---|
-| Inventaris Barang (2 sheet) | <a href="https://srmdn.github.io/sop-masjid/template/inventaris-barang.xlsx" download>inventaris-barang.xlsx</a> |
+Tautan salinan Google Sheets belum tersedia. Struktur di bawah dapat dibuat
+manual di Google Sheets atau buku catatan. Jangan memasukkan data internal
+ke dokumen yang dibagikan publik.
 
 ## Struktur Template
 

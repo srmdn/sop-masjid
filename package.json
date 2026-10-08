@@ -4,12 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "docs:dev": "astro dev",
+    "docs:build": "astro build",
+    "docs:preview": "astro preview"
   },
   "devDependencies": {
-    "vitepress": "^1.6.3",
-    "xlsx": "^0.18.5"
+    "@astrojs/markdown-remark": "^7.3.2",
+    "astro": "^7.3.7"
   }
 }

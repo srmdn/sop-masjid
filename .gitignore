@@ -10,3 +10,5 @@ Thumbs.db
 *.tgz
 .local/
 .opencode/
+
+.astro/

@@ -2,7 +2,7 @@
 
 ## Project
 - Open-source SOP/template/checklist toolkit for mosque/musholla management
-- Website: VitePress (`docs/`), deployed to GitHub Pages
+- Website: Astro static (`src/`), Markdown content (`docs/`), deployed to GitHub Pages
 - Target audience: Indonesian mosque admins (non-technical)
 
 ## Package Terminology
@@ -21,6 +21,8 @@
 ## Conventions
 - `.local/` — project manifests, PRD, internal planning docs (gitignored)
 - Content language: Indonesian
+- Public examples use the dummy name "Masjid Contoh" and role labels, not real mosque/staff identities. Label example scenarios as simulations, not approved or field-tested implementations.
+- Actual target-mosque details and DKM proposal documents remain internal in `.local/`.
 - SOP structure: Tujuan → Peralatan → Langkah → Catatan
 - Templates: Google Sheets/Docs link-only in repo, never raw `.xlsx`/`.docx`
 - Dual license: MIT (code), CC BY-SA 4.0 (content)

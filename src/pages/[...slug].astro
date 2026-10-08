@@ -1,0 +1,12 @@
+---
+import Site from '../layouts/Site.astro';import { documents, href } from '../lib/materials';
+export function getStaticPaths(){return documents.map(entry=>({params:{slug:entry.slug},props:{entry}}));}
+const {entry}=Astro.props;const {Content}=entry.doc;const headings=(await entry.doc.getHeadings()).filter(h=>h.depth===2);const related=documents.filter(d=>d.packageName===entry.packageName&&d.slug!==entry.slug).slice(0,4);
+---
+<Site title={entry.title}><div class="wrap reader-top"><a href={href('materi')}>← Kembali ke materi</a><div><span class="tag">{entry.kind} · {entry.packageName}</span><button id="print" class="small-button" type="button">Cetak halaman ↗</button></div></div><div class="wrap reader"><article class="prose"><Content/></article><aside class="reading-nav"><details open><summary>Di halaman ini</summary><nav aria-label="Daftar isi">{headings.map(h=><a href={`#${h.slug}`}>{h.text}</a>)}</nav></details><div class="reading-note"><strong>Sesuaikan sebelum dipakai.</strong><p>Sepakati tugas dan kewenangan bersama pengurus. Panduan ini belum menjamin hasil di setiap masjid.</p></div></aside></div><section class="wrap section related"><p class="eyebrow">LANJUTKAN MEMBACA</p><div>{related.map(r=><a href={href(r.slug)}>{r.title}<span>↗</span></a>)}</div></section></Site>
+<script>
+  document.querySelector('#print')?.addEventListener('click', () => window.print());
+  if (window.matchMedia('(max-width: 680px)').matches) {
+    document.querySelector('.reading-nav details')?.removeAttribute('open');
+  }
+</script>

@@ -2,15 +2,11 @@
 
 Template spreadsheet untuk mencatat dan mengatur jadwal imam, muadzin, dan khatib secara rapi dan mudah dilihat.
 
-## Cara Dapatkan
+## Ketersediaan
 
-### Download
-
-Download file Excel di bawah — langsung buka di Excel, WPS, atau import ke Google Sheets.
-
-| Template | Download |
-|---|---|
-| Jadwal Imam/Muadzin (2 sheet) | <a href="https://srmdn.github.io/sop-masjid/template/jadwal-imam-muadzin.xlsx" download>jadwal-imam-muadzin.xlsx</a> |
+Tautan salinan Google Sheets belum tersedia. Struktur di bawah dapat dibuat
+manual di Google Sheets atau buku catatan. Jangan memasukkan data internal
+ke dokumen yang dibagikan publik.
 
 ## Struktur Template
 

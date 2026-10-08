@@ -1,32 +1,38 @@
-# Mulai di Sini
+# Mulai dari kebutuhan timmu
 
-Pilih jalur yang sesuai:
+Semua panduan dapat dibaca tanpa akun atau instalasi. Gunakan sebagai bahan
+pembahasan dan sesuaikan sebelum diterapkan.
 
-## Saya pengurus masjid/mushola
+## 1. Pilih materi atau paket
 
-1. **Pilih paket** — buka [halaman paket](/paket/) dan pilih yang sesuai ukuran masjid/mushola kamu.
-2. **Baca panduan** — setiap paket punya panduan mulai yang menjelaskan cara pakai.
-3. **Salin template** — template Google Docs/Sheets bisa langsung disalin dan diedit.
-4. **Ikuti checklist** — checklist harian dan mingguan siap dipakai.
+Buka [katalog materi](/materi/) jika mencari tugas tertentu, atau pilih
+[Paket Mushola Starter](/paket/mushola-starter/) untuk administrasi sederhana.
+[Paket Masjid Dasar](/paket/masjid-dasar/) menambahkan pembagian peran,
+pengganti petugas, serta penanganan kendala operasional.
 
-::: tip Tidak perlu paham GitHub
-Semua konten bisa diakses langsung dari website ini. Kamu tidak perlu install atau setup apa pun.
-:::
+## 2. Baca dan sesuaikan bersama
 
-## Saya ingin berkontribusi
+Tentukan petugas, jam kerja, pengganti, dan keputusan yang boleh didelegasikan.
+Baca [simulasi Masjid Contoh](/contoh/) untuk melihat contoh tim kecil.
+Simulasi tersebut bukan laporan penerapan yang sudah disahkan.
 
-1. Baca [Panduan Kontribusi](/kontribusi)
-2. Kunjungi [repo GitHub](https://github.com/srmdn/sop-masjid)
-3. Buka issue atau kirim pull request
+## 3. Gunakan format yang tersedia
 
----
+Checklist dan tabel dapat dicetak melalui tombol **Cetak halaman** atau
+melalui menu cetak browser. Untuk menyimpan PDF, pilih tujuan **Simpan sebagai
+PDF** jika tersedia pada perangkatmu.
 
-## Paket Tersedia
+Halaman template menjelaskan susunan kolom untuk dibuat di Google Sheets
+atau buku catatan. Tautan salinan Google belum tersedia; belum ada tombol
+salin otomatis. Simpan data petugas dan keuangan pada dokumen internal.
 
-| Paket | Untuk | Status |
-|---|---|---|
-| [Paket Mushola Starter](/paket/mushola-starter/) | Mushola/surau kecil, pengurus terbatas | <span class="badge badge-progress"><span class="badge-dot"></span>v0.1</span> |
-| Paket Masjid Dasar | Masjid dengan operasional rutin | <span class="badge badge-upcoming"><span class="badge-dot"></span>v0.2</span> |
-| Paket Keuangan Masjid | Semua jenis (modul tambahan) | <span class="badge badge-upcoming"><span class="badge-dot"></span>v0.3</span> |
+## 4. Evaluasi dan perbaiki
 
-Bingung mulai dari mana? Mulai dari [Paket Mushola Starter](/paket/mushola-starter/) — paket paling sederhana yang cocok untuk hampir semua mushola.
+Setelah pembagian tugas disepakati, tentukan periode uji. Catat kendala,
+beban kerja, dan perbaikan bersama petugas. Panduan ini dapat diubah mengikuti
+fasilitas serta kebutuhan jamaah.
+
+## Ingin membantu mengembangkan?
+
+Baca [panduan kontribusi](/kontribusi/) atau kunjungi
+[repository GitHub](https://github.com/srmdn/sop-masjid).

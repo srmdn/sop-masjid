@@ -1,0 +1,12 @@
+---
+import '../styles/global.css';
+import { href } from '../lib/materials';
+const { title = 'SOP Masjid', description = 'Panduan, SOP, dan checklist gratis untuk operasional masjid dan mushola.' } = Astro.props;
+const nav = [['materi','Materi'],['paket','Paket'],['mulai','Cara pakai'],['contoh','Contoh']];
+---
+<!doctype html><html lang="id"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="description" content={description}/><meta name="theme-color" content="#f8f7f3"/><title>{title === 'SOP Masjid' ? title : `${title} · SOP Masjid`}</title><link rel="icon" type="image/svg+xml" href={href('favicon.svg').replace(/\/$/,'')}/><link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)}/></head><body>
+<a class="skip" href="#main">Langsung ke konten</a>
+<header class="site-header"><a class="brand" href={href()} aria-label="SOP Masjid — beranda"><span class="brand-icon">↗</span>SOP<span class="brand-light">Masjid</span></a><nav aria-label="Navigasi utama">{nav.map(([route,label])=><a href={href(route)} aria-current={Astro.url.pathname.startsWith(href(route))?'page':undefined}>{label}</a>)}</nav><a class="github" href="https://github.com/srmdn/sop-masjid">GitHub ↗</a></header>
+<main id="main"><slot/></main>
+<footer class="site-footer"><div><a class="brand" href={href()}>SOP Masjid<span class="dot">●</span></a><p>Kerja bersama. Panduan terbuka.</p></div><div><a href={href('kontribusi')}>Ikut berkontribusi ↗</a><p>Konten CC BY-SA 4.0 · Kode MIT</p></div></footer>
+</body></html>

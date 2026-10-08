@@ -2,15 +2,11 @@
 
 Template spreadsheet untuk mencatat pemasukan dan pengeluaran kas mushola secara harian, rapi, dan transparan.
 
-## Cara Dapatkan
+## Ketersediaan
 
-### Download
-
-Download file Excel di bawah — langsung buka di Excel, WPS, atau import ke Google Sheets.
-
-| Template | Download |
-|---|---|
-| Kas Masuk-Keluar (2 sheet) | <a href="https://srmdn.github.io/sop-masjid/template/kas-masuk-keluar.xlsx" download>kas-masuk-keluar.xlsx</a> |
+Tautan salinan Google Sheets belum tersedia. Struktur di bawah dapat dibuat
+manual di Google Sheets atau buku catatan. Jangan memasukkan data internal
+ke dokumen yang dibagikan publik.
 
 ## Struktur Template
 
@@ -63,15 +59,19 @@ Template terdiri dari beberapa **sheet** (tab):
 3. **Simpan bukti** — foto kwitansi/struk dengan HP. Jika memungkinkan, masukkan link foto ke kolom "Bukti".
 4. **Saldo akan otomatis berkurang** — jika menggunakan rumus.
 
-### Rumus yang Disarankan
+### Menghitung saldo
 
-Di kolom **Saldo**, gunakan rumus:
-```
-=IF(B2="","", IF(D2="Pemasukan", G1+E2, G1-E2))
-```
-*(B2 = Tanggal, D2 = Jenis, G1 = Saldo sebelumnya, E2 = Jumlah)*
+Untuk susunan kolom A–H pada tabel di atas, isi saldo awal pada F2 dan
+mulai transaksi pertama pada baris 3. Di F3 gunakan:
 
-Ini akan otomatis menghitung saldo tanpa harus menghitung manual.
+```text
+=IF(B3="","",IF(C3="Pemasukan",F2+E3,IF(C3="Pengeluaran",F2-E3,F2)))
+```
+
+Salin ke bawah. B = tanggal, C = jenis, E = jumlah, F = saldo.
+Contoh: saldo awal 100000, pemasukan 50000 → 150000; pengeluaran berikutnya
+20000 → 130000. Uji pada salinan sendiri sebelum dipakai. Setelan lokal
+spreadsheet tertentu memakai titik koma sebagai pengganti koma.
 
 ## Tips
 

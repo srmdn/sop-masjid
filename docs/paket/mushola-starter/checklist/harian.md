@@ -26,7 +26,7 @@ Daftar tugas harian yang perlu dikerjakan petugas atau marbot mushola. Cetak dan
 
 - [ ] Rapikan sajadah — susun rapi dan kembalikan Al-Quran ke rak
 - [ ] Periksa apakah ada barang tertinggal
-- [ ] Saijnah yang kotor disampahkan
+- [ ] Sampah dibuang ke tempatnya
 - [ ] Matikan kipas angin di setiap ruangan
 - [ ] Matikan lampu (biarkan lampu luar jika perlu)
 - [ ] Matikan pengeras suara

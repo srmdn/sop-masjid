@@ -34,10 +34,10 @@ Paket dasar untuk mushola/surau kecil dengan pengurus terbatas dan kebutuhan adm
 
 1. Baca [Panduan Mulai](./panduan-mulai)
 2. Baca SOP yang relevan
-3. Salin template yang dibutuhkan (Google Sheets/Docs)
+3. Buat tabel sesuai struktur template; tautan salinan Google belum tersedia
 4. Cetak checklist dan tempel di mushola
 5. Sesuaikan semua dokumen dengan kondisi mushola kamu
 
-::: tip Semua dokumen bisa disesuaikan
+> **Semua dokumen bisa disesuaikan**
+>
 Setiap SOP, template, dan checklist di sini adalah **panduan awal**. Silakan ubah, tambah, atau kurangi sesuai kebutuhan mushola kamu.
-:::
