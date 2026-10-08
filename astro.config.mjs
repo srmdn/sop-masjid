@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 import { unified } from '@astrojs/markdown-remark';
 import publicLinks from './scripts/public-links.mjs';
+import responsiveTables from './scripts/responsive-tables.mjs';
 export default defineConfig({
   site: 'https://srmdn.github.io', base: '/sop-masjid', output: 'static',
-  trailingSlash: 'always', markdown: { processor: unified({ remarkPlugins: [publicLinks] }) },
+  trailingSlash: 'always', markdown: { processor: unified({ remarkPlugins: [publicLinks], rehypePlugins: [responsiveTables] }) },
 });

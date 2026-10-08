@@ -1,10 +1,64 @@
 ---
 import Site from '../layouts/Site.astro';
-import { href, materials } from '../lib/materials';
-const featured = ['paket/masjid-dasar/sop-inti','paket/mushola-starter/template/jadwal-imam','paket/mushola-starter/template/kas','paket/masjid-dasar/alat-kerja'].map(slug=>materials.find(m=>m.slug===slug)!);
+import { href } from '../lib/materials';
+const areas = [
+  ['01', 'Petugas & ibadah', 'Jadwal imam, muadzin, konfirmasi tugas, dan pengganti.', 'paket/mushola-starter/template/jadwal-imam', 'Jadwal petugas'],
+  ['02', 'Kebersihan area', 'Pemeriksaan ruang shalat, toilet, tempat wudhu, dan sampah.', 'paket/mushola-starter/sop/kebersihan', 'SOP kebersihan'],
+  ['03', 'Fasilitas & persediaan', 'Catat kondisi alat, stok barang, kerusakan, dan perawatan.', 'paket/masjid-dasar/alat-kerja/#persediaan-dan-perawatan', 'Format pemeriksaan'],
+  ['04', 'Kas & belanja', 'Catat transaksi, simpan bukti, dan periksa saldo.', 'paket/mushola-starter/template/kas', 'Struktur buku kas'],
+  ['05', 'Jumat & kajian', 'Konfirmasi pelaksana, siapkan tempat, dan catat perubahan acara.', 'paket/masjid-dasar/sop-inti/#sop-06--koordinasi-kajian-rutin', 'SOP kegiatan'],
+  ['06', 'Koordinasi harian', 'Bagi tugas, lakukan serah-terima, dan tindak lanjuti kendala.', 'paket/masjid-dasar', 'Pembagian peran'],
+];
+const tools = [
+  ['01', 'Jadwal imam / muadzin', 'Struktur tabel', 'paket/mushola-starter/template/jadwal-imam'],
+  ['02', 'Pemeriksaan harian', 'Checklist', 'paket/mushola-starter/checklist/harian'],
+  ['03', 'Catatan kendala & serah-terima', 'Format catatan', 'paket/masjid-dasar/alat-kerja'],
+];
 ---
-<Site><section class="hero wrap"><div class="hero-copy"><p class="eyebrow"><span class="dot">●</span> TOOLKIT GRATIS & TERBUKA</p><h1>Biar urusan masjid<br/>lebih <em>tertata.</em></h1><p class="lede">Dari jadwal imam sampai kebersihan harian. Panduan, SOP, dan checklist yang bisa disesuaikan dengan tim masjidmu.</p><div class="actions"><a class="button primary" href={href('materi')}>Jelajahi materi <span>↗</span></a><a class="text-link" href={href('mulai')}>Cara memakai →</a></div><p class="micro">Bebas dibaca, dicetak, dan diadaptasi · Tanpa instalasi</p></div><div class="hero-art" aria-label="Pratinjau contoh checklist kesiapan shalat"><span class="art-label">SEDIKIT LEBIH RAPI, SETIAP HARI.</span><div class="paper"><div class="paper-top"><span>CATATAN OPERASIONAL</span><span>01 / HARIAN</span></div><h2>Sebelum jamaah<br/>datang.</h2><p>Checklist kesiapan shalat</p><ul><li><span>✓</span> Imam & muadzin terkonfirmasi</li><li><span>✓</span> Area shalat bersih dan kering</li><li><span>✓</span> Air wudhu tersedia</li><li><span class="empty">□</span> Audio & akses diperiksa</li></ul><div class="paper-foot">PETUGAS <b>Marbot bertugas</b></div></div><div class="art-stamp">Tugas jelas.<br/>Tim lebih tenang.</div></div></section>
-<section class="quick wrap" aria-label="Cari menurut kebutuhan"><p>Mau beresin<br/><strong>yang mana dulu?</strong></p>{[['paket/mushola-starter/template/jadwal-imam','01','Atur jadwal'],['paket/mushola-starter/template/kas','02','Catat kas'],['paket/mushola-starter/sop/kebersihan','03','Rawat area'],['paket/masjid-dasar/sop-inti','04','Bagi tugas']].map(([route,no,label])=><a href={href(route)}><span>{no}</span>{label}<b>↗</b></a>)}</section>
-<section class="wrap section"><div class="section-heading"><div><p class="eyebrow">PERPUSTAKAAN KERJA</p><h2>Mulai dari yang dibutuhkan.</h2></div><a class="text-link" href={href('materi')}>Semua materi →</a></div><div class="card-grid">{featured.map((m,i)=><a class="material-card" href={href(m.slug)}><div class={`card-cover cover-${i}`}><span class="cover-number">0{i+1}</span><div class="mini-sheet"><span>{m.kind.toUpperCase()}</span><strong>{['Alur kerja\nharian','Jadwal imam\n& muadzin','Catatan kas\nmasuk–keluar','Checklist\n& catatan'][i]}</strong><div class="mini-lines"><i/><i/><i/></div></div></div><div class="card-info"><span class="tag">{m.kind}</span><h3>{m.title}</h3><p>{m.packageName}<span>↗</span></p></div></a>)}</div></section>
-<section class="wrap section package-feature"><div><p class="eyebrow">SISTEM YANG BISA DISESUAIKAN</p><h2>Tim kecil.<br/>Pembagian kerja jelas.</h2><p>Mulai dari kesiapan shalat, kebersihan, dan pengganti petugas. Paket Masjid Dasar menyatukan peran, alur kerja, dan cara mencatat kendala.</p><a class="button primary" href={href('paket/masjid-dasar')}>Buka Paket Masjid Dasar ↗</a></div><div class="role-board"><div><span>01</span><strong>Pengurus</strong><p>Tetapkan mandat & evaluasi</p></div><div><span>02</span><strong>Koordinator</strong><p>Atur jadwal & tindak lanjut</p></div><div><span>03</span><strong>Petugas</strong><p>Jalankan & catat hasil</p></div><a href={href('contoh')}>Lihat simulasi Masjid Contoh →</a></div></section>
-<section class="wrap section steps"><div><p class="eyebrow">CARA MEMAKAI</p><h2>Ambil. Sesuaikan.<br/>Jalankan bersama.</h2></div>{[['01','Pilih kebutuhan','Baca materi yang sesuai dengan layanan dan tim yang tersedia.'],['02','Sesuaikan bersama','Tentukan petugas, jadwal, dan kewenangan dengan pengurus.'],['03','Pakai & perbaiki','Cetak checklist, catat kendala, lalu evaluasi hasilnya.']].map(([no,title,desc])=><div><span>{no}</span><h3>{title}</h3><p>{desc}</p></div>)}</section></Site>
+<Site>
+  <section class="intro wrap">
+    <div class="edition"><span>REFERENSI KERJA</span><span>GRATIS · TERBUKA UNTUK ADAPTASI</span></div>
+    <div class="intro-grid">
+      <h1>Panduan kerja<br />masjid & mushola<span class="accent">.</span></h1>
+      <div class="intro-description">
+        <p>SOP, checklist, dan format catatan untuk pengurus, imam, serta petugas masjid.</p>
+        <p class="muted">Pilih pekerjaan di bawah, atau baca paket untuk menyusun pembagian tugas.</p>
+        <a class="inline-link" href={href('mulai')}>Cara menggunakan panduan <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-index wrap" aria-labelledby="work-title">
+    <div class="section-heading"><h2 id="work-title">Bidang pekerjaan</h2><span class="section-label">01—06 / INDEKS</span></div>
+    <div class="work-grid">
+      {areas.map(([no, title, description, route, action]) => <a class="work-entry" href={route.includes('#') ? href(route.split('#')[0]) + '#' + route.split('#')[1] : href(route)}>
+        <span class="entry-number">{no}</span>
+        <div><h3>{title}</h3><p>{description}</p><span class="entry-action">{action} <span aria-hidden="true">↗</span></span></div>
+      </a>)}
+    </div>
+  </section>
+
+  <section class="desk wrap" aria-labelledby="desk-title">
+    <div class="desk-copy"><p class="eyebrow">PEMERIKSAAN LAYANAN</p><h2 id="desk-title">Sebelum shalat<br />berjamaah.</h2><p>Periksa kesiapan petugas dan fasilitas. Jika ada kendala, tentukan siapa yang menindaklanjuti.</p><a class="inline-link" href={href('paket/masjid-dasar/alat-kerja')}>Baca checklist lengkap →</a></div>
+    <div class="service-list"><p class="list-caption">RINGKASAN CHECKLIST</p><ol>
+      <li><span>01</span><div><strong>Imam & muadzin</strong><p>Konfirmasi kehadiran dan pengganti bila diperlukan.</p></div></li>
+      <li><span>02</span><div><strong>Area & air</strong><p>Periksa lantai, toilet, tempat wudhu, dan pasokan air.</p></div></li>
+      <li><span>03</span><div><strong>Audio & akses</strong><p>Uji perangkat dan pastikan jalur masuk dapat digunakan.</p></div></li>
+    </ol></div>
+  </section>
+
+  <section class="wrap document-section" aria-labelledby="tools-title">
+    <div class="section-heading"><h2 id="tools-title">Dokumen kerja</h2><a class="inline-link" href={href('materi')}>Semua materi →</a></div>
+    <div class="document-list">{tools.map(([no, title, type, route]) => <a href={href(route)}><span class="entry-number">{no}</span><h3>{title}</h3><span class="document-type">{type}</span><span class="document-arrow" aria-hidden="true">↗</span></a>)}</div>
+    <p class="availability-note">Baca dan cetak langsung. Halaman template saat ini berisi struktur tabel; file unduhan belum tersedia.</p>
+  </section>
+
+  <section class="wrap collection-section" aria-labelledby="collection-title">
+    <div class="section-heading"><h2 id="collection-title">Panduan dalam satu paket</h2><a class="inline-link" href={href('paket')}>Lihat paket →</a></div>
+    <div class="collection-grid">
+      <a href={href('paket/mushola-starter')}><span class="eyebrow">PAKET 01</span><h3>Mushola Starter</h3><p>Buka-tutup, kebersihan, kas infak, inventaris, dan jadwal petugas.</p><span class="collection-meta">4 SOP · struktur tabel · checklist <b aria-hidden="true">↗</b></span></a>
+      <a href={href('paket/masjid-dasar')}><span class="eyebrow">PAKET 02</span><h3>Masjid Dasar</h3><p>Pembagian peran, pengganti, persiapan kegiatan, dan tindak lanjut kendala.</p><span class="collection-meta">10 SOP inti · format catatan <b aria-hidden="true">↗</b></span></a>
+    </div>
+  </section>
+  <section class="wrap example-strip"><div><p class="eyebrow">CONTOH PENERAPAN</p><h2>Empat petugas, beberapa fungsi.</h2><p>Simulasi pembagian kerja untuk dua imam dan dua marbot.</p></div><a class="inline-link" href={href('contoh')}>Baca Masjid Contoh →</a></section>
+</Site>
