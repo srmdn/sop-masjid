@@ -1,11 +1,12 @@
 # SOP inti operasional masjid
 
-Versi: 0.1 — 8 Oktober 2026
+Versi: 0.2 — 9 Oktober 2026
 
 Status: adaptasi/usulan proyek untuk ditinjau dan diuji, belum disahkan lokal.
 
 Isi penanggung jawab, pengganti, waktu, dan kewenangan pada
-[simulasi Masjid Contoh](/contoh/) sebelum memakai SOP.
+[lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/) sebelum
+memakai SOP. [Simulasi Masjid Contoh](/contoh/) hanya contoh pembagian peran.
 Landasan dan batas sumber ada pada [panduan utama](/paket/masjid-dasar/#landasan-dan-batas-adaptasi).
 Langkah di bawah bukan kutipan SOP resmi masjid sumber.
 
@@ -313,8 +314,10 @@ yang ditetapkan. Selesai jika barang diterima, bukti tercatat, dan diperiksa.
 
 ### Catatan
 
-Dokumen ini tidak memberi akses kas baru kepada imam/koordinator. SOP hitung
-infak dan pembukuan lengkap perlu disusun tersendiri sebelum digunakan.
+Dokumen ini tidak memberi akses kas baru kepada imam/koordinator. Penghitungan infak,
+pemindahan antarpenyimpanan, dan pemeriksaan saldo mengikuti
+[SOP kas sederhana](/paket/mushola-starter/sop/kas-infak/). Rincian uang
+muka dan pembukuan yang lebih kompleks membutuhkan format tambahan.
 Dasar adaptasi: pemisahan fungsi keuangan Istiqlal dan kebutuhan pembiayaan
 operasional Al-Akbar; kontrol belanja adalah usulan proyek.
 

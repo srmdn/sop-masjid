@@ -5,7 +5,7 @@ Panduan langkah demi langkah untuk mulai menggunakan paket Mushola Starter.
 ## Sebelum Mulai
 
 Kamu butuh:
-- Akses Google Docs dan Google Sheets (akun Google)
+- Buku catatan atau aplikasi tabel yang dipilih pengurus (opsional)
 - Printer (opsional, untuk mencetak checklist)
 - Koordinasi dengan pengurus mushola lainnya
 
@@ -18,15 +18,23 @@ Baca dulu semua SOP sebelum membuat salinan template:
 3. [SOP Pengelolaan Kas Infak Sederhana](./sop/kas-infak)
 4. [SOP Inventaris Barang Mushola](./sop/inventaris)
 
-## Langkah 2: Salin Template
+## Langkah 2: Siapkan tabel kerja
 
-Setelah paham alurnya, salin template yang dibutuhkan:
+Halaman berikut berisi susunan kolom dan petunjuk pengisian:
 
-1. [Template Jadwal Imam/Muadzin](./template/jadwal-imam) — klik "Salin Google Sheet"
-2. [Template Kas Masuk-Keluar](./template/kas) — klik "Salin Google Sheet"
-3. [Template Inventaris Barang](./template/inventaris) — klik "Salin Google Sheet"
+1. [Template Jadwal Imam/Muadzin](./template/jadwal-imam)
+2. [Template Kas Masuk-Keluar](./template/kas)
+3. [Template Inventaris Barang](./template/inventaris)
 
-Setiap template akan terbuka di Google Sheets. Pilih **File → Buat Salinan** untuk menyimpan ke akun Google kamu.
+Tautan salinan Google dan file unduhan belum tersedia. Buat tabel mengikuti
+struktur yang dibutuhkan di buku, Numbers, Google Sheets, atau aplikasi
+lain. Rumus pada panduan kas perlu diuji di aplikasi pilihanmu; jangan
+menganggap rumus otomatis tersedia setelah menyalin teks. Akun Google
+tidak diperlukan untuk membaca atau mencetak materi.
+
+Sebelum mulai, isi [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/)
+untuk tugas yang dipakai. Tentukan petugas, pengganti, jam layanan, dan izin
+belanja bersama pengurus.
 
 ## Langkah 3: Cetak Checklist
 

@@ -1,70 +1,101 @@
 # SOP Pengelolaan Kas Infak Sederhana
 
-Menjelaskan tata cara mencatat, menyimpan, dan melaporkan kas infak mushola dengan sistem sederhana yang mudah diwariskan ke pengurus berikutnya.
+Versi: 0.2 — 9 Oktober 2026. Status: panduan adaptasi, belum teruji di lapangan.
 
 ## Tujuan
 
-- Memastikan setiap pemasukan dan pengeluaran kas infak tercatat.
-- Menjaga transparansi keuangan mushola agar jamaah percaya.
-- Mempermudah serah-terima kas antar pengurus.
-- Mencegah kesalahan pencatatan dan potensi kebocoran.
+Mencatat setiap penerimaan dan pengeluaran sekali, memeriksa saldo, serta
+menyerahkan uang dan catatan dengan jelas. Pelaksana: bendahara/petugas kas;
+pemeriksa: orang lain yang ditunjuk pengurus. Pengurus menetapkan izin belanja.
+Selesai jika transaksi, bukti, saldo, dan hasil pemeriksaan dapat ditelusuri.
 
 ## Peralatan
 
-- Buku kas atau [Template Kas Masuk-Keluar](../template/kas.md) (Google Sheets)
-- Kotak infak (tanpa kunci atau dengan kunci, tergantung keputusan pengurus)
-- Pen dan spidol
-- Amplop atau plastik segel untuk menyimpan uang sebelum disetor
-- Kotak penyimpanan uang (brankas kecil atau kotak terkunci)
+- Buku kas atau [struktur tabel kas](../template/kas).
+- Kotak infak dan tempat penyimpanan yang aksesnya dibatasi.
+- Lembar hitung infak, bukti transaksi, dan mutasi rekening jika ada.
+- [Pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/) berisi petugas,
+  pemeriksa, jadwal pengumpulan, pemegang akses, dan batas izin belanja.
 
 ## Langkah
 
-### Mencatat Pemasukan
+### Menyiapkan catatan
 
-1. **Kumpulkan infak harian** — ambil uang dari kotak infak setiap hari setelah Isya (atau sesuai jadwal yang disepakati).
-2. **Hitung dan catat** — hitung jumlah uang dan catat di buku kas atau spreadsheet:
-   - Tanggal
-   - Sumber (infak harian, infak Jumat, infak khusus, donasi)
-   - Jumlah
-3. **Simpan bukti** — jika ada transfer bank atau donasi berupa kwitansi, sematkan di buku kas atau simpan foto di folder khusus.
-4. **Setor ke kotak penyimpanan** — masukkan uang ke kotak penyimpanan terkunci. Simpan kunci di tempat yang disepakati (hanya bendahara yang memegang).
+1. Tetapkan satu buku/tabel untuk setiap tempat penyimpanan: kas tunai dan
+   masing-masing rekening bank. Beri nama serta periode pencatatan.
+2. Petugas dan pemeriksa mencocokkan saldo awal dengan uang fisik atau saldo
+   rekening pada tanggal awal. Catat tanggal, nominal, dan hasil pemeriksaan.
+3. Tentukan siapa mengumpulkan, menghitung, mencatat, menyimpan, dan memeriksa.
+   Jika pemeriksa belum tersedia, hubungi pengurus untuk menunjuk pengganti;
+   jangan melewati pemeriksaan atau membiarkan uang tanpa penanggung jawab.
 
-### Mencatat Pengeluaran
+### Menerima infak
 
-1. **Ajukan kebutuhan** — pengurus yang membutuhkan pengeluaran (belanja sabun, bayar listrik, dll) mengajukan ke bendahara.
-2. **Sepakati jumlah** — pastikan jumlah pengeluaran disepakati sebelum uang dikeluarkan. Untuk pengeluaran rutin (listrik, air), catat sebagai pengeluaran tetap.
-3. **Keluarkan uang** — bendahara mengeluarkan uang dari kotak penyimpanan.
-4. **Simpan bukti belanja** — kwitansi, struk, atau foto nota wajib disimpan dan dicatat di buku kas.
-5. **Catat di buku kas** — tuliskan:
-   - Tanggal
-   - Keterangan (belanja sabun, bayar listrik, dll)
-   - Jumlah
-   - Nomor kwitansi/struk (jika ada)
+1. Kumpulkan menurut jadwal yang disepakati, bukan otomatis setiap hari.
+   Petugas dan pemeriksa menghitung bersama; bila berbeda, hitung ulang.
+2. Catat tanggal, sumber, nominal, nomor catatan/bukti, pencatat, dan pemeriksa.
+   Kedua petugas mengonfirmasi lembar hitung. Hindari data donatur yang tidak
+   diperlukan pada rekap publik.
+3. Masukkan penerimaan satu kali ke buku penyimpanan yang menerima uang.
+   Untuk transfer donatur, cocokkan dengan mutasi rekening, bukan hanya pesan
+   atau gambar bukti kirim. Jangan mencatatnya lagi sebagai infak tunai.
+4. Serahkan uang ke pemegang penyimpanan berwenang. Catat nominal, waktu,
+   pemberi, dan penerima. Batasi akses kunci/kode sesuai pengaturan lokal.
 
-### Melaporkan Saldo
+### Membelanjakan dana
 
-1. **Hitung saldo** — total pemasukan dikurangi total pengeluaran. Saldo harus sesuai dengan uang yang ada di kotak penyimpanan.
-2. **Laporkan bulanan** — buat laporan kas bulanan yang ditampilkan di papan pengumuman mushola atau dibagikan ke jamaah. Laporan minimal berisi:
-   - Total pemasukan bulan ini
-   - Total pengeluaran bulan ini
-   - Saldo akhir
-3. **Rekonsiliasi** — setiap bulan, hitung ulang uang fisik di kotak penyimpanan dan cocokkan dengan catatan. Jika ada selisih, telusuri segera.
+1. Catat kebutuhan, jumlah barang/jasa, perkiraan biaya, dan dasar izin.
+2. Periksa batas transaksi dan periode. Belanja di luar mandat memerlukan
+   keputusan pengurus berwenang; pesan yang belum dijawab bukan persetujuan.
+3. Catat pembayaran pada buku tunai/rekening yang membayar, beserta penerima,
+   jumlah aktual, dan bukti. Jika bukti belum ada, tandai belum lengkap dan
+   minta tindak lanjut; jangan menganggap pemeriksaan sudah selesai.
+4. Pemeriksa mencocokkan izin, bukti, dan penerimaan barang/jasa. Untuk uang
+   muka, catat sebagai uang muka yang belum selesai dipertanggungjawabkan;
+   cocokkan belanja, sisa yang dikembalikan, serta bukti sebelum menutupnya.
+   Format sederhana ini belum menjadi buku rincian uang muka.
 
-### Serah-Terima Kas
+### Memindahkan uang antarpenyimpanan
 
-1. **Saat pergantian pengurus** — bendahara lama menyerahkan:
-   - Buku kas atau akses ke spreadsheet
-   - Seluruh uang di kotak penyimpanan
-   - Kwitansi dan bukti pembayaran
-   - Saldo terakhir yang telah direkonsiliasi
-2. **Bendahara baru memeriksa** — hitung uang fisik dan cocokkan dengan saldo tercatat. Jika cocok, tandatangani berita acara serah-terima.
-3. **Ganti kunci** — ganti kombinasi atau kunci kotak penyimpanan jika memungkinkan.
+1. Saat menyetor tunai ke rekening atau menarik uang rekening untuk kas,
+   catat `Pemindahan keluar` pada buku asal dan `Pemindahan masuk` pada buku
+   tujuan. Gunakan satu nomor referensi, nominal yang sama, dan bukti penerimaan.
+2. Pemindahan internal tidak menambah pemasukan donasi atau belanja masjid.
+   Catat biaya bank, jika ada, sebagai pengeluaran terpisah sesuai izin.
+3. Pemeriksa mencocokkan kedua sisi. Jika belum masuk ke tujuan, tandai
+   pemindahan belum selesai dan telusuri; jangan menyatakan saldo sudah cocok.
+
+### Memeriksa dan melaporkan saldo
+
+1. Hitung per buku: saldo awal + pemasukan − pengeluaran + pemindahan masuk
+   − pemindahan keluar. Jangan menambahkan saldo awal sebagai donasi baru.
+2. Pada jadwal pemeriksaan, cocokkan buku tunai dengan uang fisik dan masing-
+   masing buku bank dengan mutasi rekening. Pemeriksa berbeda dari pencatat.
+3. Catat saldo buku, saldo aktual, selisih, tanggal, dan kedua petugas. Jika
+   selisih, telusuri transaksi serta bukti dan laporkan kepada pengurus.
+   Jangan membuat transaksi penyesuaian tanpa penjelasan dan persetujuan.
+4. Buat rekap bulanan dari transaksi yang sudah dicatat. Tampilkan saldo awal,
+   pemasukan, pengeluaran, pemindahan, saldo akhir, dan hasil pemeriksaan.
+   Saat menggabungkan seluruh buku, jangan menghitung pemindahan internal
+   sebagai donasi/belanja. Publikasikan ringkasan tanpa kontak atau bukti pribadi.
+
+### Serah-terima kas
+
+1. Pemberi dan penerima, disaksikan pemeriksa, mencocokkan uang, saldo rekening,
+   catatan, bukti, pemindahan tertunda, uang muka, dan selisih yang belum selesai.
+2. Catat tanggal, saldo per penyimpanan, pihak yang menyerahkan/menerima,
+   pemeriksa, dan tindak lanjut. Selisih dicatat terbuka, bukan disembunyikan.
+3. Serahkan kewenangan akses sesuai keputusan pengurus. Cabut akses pihak
+   yang tidak lagi bertugas dan atur pemegang kunci/kode berwenang.
 
 ## Catatan
 
-- **Sederhana dulu** — untuk mushola kecil, buku kas tulis sudah cukup. Spreadsheet opsional. Yang penting konsisten mencatat setiap hari.
-- **Jangan campur uang pribadi** — uang kas infak tidak boleh dicampur dengan uang pribadi pengurus, meskipun jumlahnya kecil.
-- **Infak Jumat** — biasanya jumlahnya lebih besar. Catat terpisah sebagai "infak Jumat" agar mudah dilaporkan.
-- **Penyaluran** — dana infak disalurkan untuk kebutuhan mushola (listrik, air, kebersihan, perbaikan). Jika ada lebih, bisa disalurkan untuk kegiatan sosial sesuai kesepakatan jamaah.
-- **Cek fisik mingguan** — selain rekonsiliasi bulanan, lakukan cek fisik mingguan untuk memastikan uang di kotak sesuai catatan.
-- **Transfer bank** — jika mushola memiliki rekening, catat transfer masuk sebagai pemasukan terpisah. Jangan lupa cek mutasi rekening secara berkala.
+- Buku tulis cukup; rumus spreadsheet adalah bantuan dan tidak menggantikan
+  pemeriksaan bukti atau uang. Jangan campur uang masjid dengan uang pribadi.
+- Dana yang penggunaannya dibatasi dicatat terpisah menurut tujuan yang
+  disepakati; jangan menganggap semua saldo boleh dibelanjakan untuk apa saja.
+- Jadwal mingguan/bulanan memeriksa dan merekap transaksi yang ada. Catat
+  penerimaan baru hanya ketika uang benar-benar diterima/dikonfirmasi.
+- Gunakan [SOP 09 Masjid Dasar](/paket/masjid-dasar/sop-inti/#sop-09--kebutuhan-barang-dan-belanja-rutin)
+  untuk alur belanja. Rincian uang muka dan pembukuan yang lebih kompleks
+  memerlukan format tambahan sebelum digunakan.

@@ -13,13 +13,13 @@ Menjelaskan tata cara membuka dan menutup mushola setiap hari agar kondisi siap 
 - Kunci pintu mushola
 - Saklar lampu dan kipas angin
 - Alat pemutar pengeras suara (jika ada)
-- Buku catatan buka-tutup (opsional)
+- Catatan buka-tutup dan daftar pemegang akses internal
 
 ## Langkah
 
 ### Membuka Mushola
 
-1. **Buka pintu** — buka kunci pintu utama. Simpan kunci di tempat yang sudah ditentukan (kotak kunci dekat pintu atau gantungan di dinding).
+1. **Buka pintu** — buka kunci pintu utama. Pastikan kunci dipegang petugas berwenang atau disimpan di tempat dengan akses terbatas yang ditetapkan pengurus. Jangan meninggalkannya pada gantungan atau kotak yang dapat diambil umum.
 2. **Nyalakan lampu** — hidupkan lampu ruang utama, ruang wudu, dan lorong.
 3. **Nyalakan kipas angin** — hidupkan kipas jika cuaca panas. Atur posisi agar sirkulasi udara merata.
 4. **Periksa tempat wudu** — pastikan air mengalir, wastafel bersih, gayung tersedia, dan lantai tidak terlalu basah.
@@ -29,19 +29,22 @@ Menjelaskan tata cara membuka dan menutup mushola setiap hari agar kondisi siap 
 
 ### Menutup Mushola
 
-1. **Pastikan tidak ada orang di dalam** — periksa ruang utama, ruang wudu, dan toilet.
+1. **Pastikan tidak ada orang di dalam** — periksa ruang utama, ruang wudu, toilet, dan ruang lain yang digunakan. Koordinasikan jamaah atau kegiatan yang masih berlangsung; tunda penguncian sampai area yang ditutup kosong.
 2. **Rapikan sajadah** — susun sajadah yang tergeser. Kembalikan Al-Quran ke rak.
 3. **Bersihkan tempat yang kotor** — sapu jika ada sampah, lap tumpahan air di tempat wudu.
-4. **Matikan kipas angin** — pergi ke setiap ruangan dan matikan kipas.
-5. **Matikan lampu** — matikan lampu ruang utama, lorong, dan ruang wudu. Biarkan lampu luar jika perlu.
-6. **Matikan pengeras suara** — pastikan perangkat audio dimatikan.
-7. **Kunci pintu** — kunci pintu utama. Simpan kunci di tempat yang disepakati.
-8. **Catat di buku buka-tutup** — tuliskan waktu tutup dan kondisi mushola (opsional tapi disarankan).
+4. **Periksa kipas angin** — matikan yang tidak diperlukan menurut daftar perangkat lokal.
+5. **Periksa lampu** — matikan sesuai daftar lokal; pertahankan lampu/perangkat yang harus tetap menyala.
+6. **Periksa pengeras suara** — matikan perangkat audio sesuai kebijakan akhir layanan.
+7. **Kunci pintu** — kunci hanya pintu/ruang yang dijadwalkan tutup setelah dipastikan kosong. Serahkan kunci kepada pemegang akses berwenang atau simpan di tempat dengan akses terbatas. Catat penerima dan waktu penyerahan.
+8. **Catat di buku buka-tutup** — tuliskan petugas, waktu pemeriksaan, ruang yang ditutup, dan kendala yang masih terbuka.
 
 ## Catatan
+
+- Sebelum berjalan, isi petugas/pengganti, daftar ruang, jam layanan, perangkat yang tetap menyala, serta pemegang akses pada [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/).
+- Jika kunci hilang atau ruang belum dapat diamankan, hubungi koordinator/pengganti segera. Jangan mencantumkan kode akses atau lokasi rinci penyimpanan kunci pada papan publik.
 
 - **Siapa yang bertugas?** — tugas buka-tutup biasanya dipegang oleh marbot atau pengurus yang bertugas secara bergiliran. Buat jadwal rotasi agar tugas ini tidak selalu dipegang oleh orang yang sama.
 - **Jam buka-tutup** — sesuaikan dengan kebiasaan jamaah. Mushola perkantoran biasanya mengikuti jam kantor. Mushola RW/RT biasanya buka dari Subuh sampai Isya.
 - **Kecelakaan atau kerusakan** — jika menemukan kerusakan saat membuka (pipa bocor, lampu mati, kaca pecah), catat dan laporkan ke pengurus segera.
-- **Mushola 24 jam** — jika mushola tidak pernah dikunci, SOP ini tetap berlaku untuk bagian "membuka" (menyiapkan sebelum shalat) dan bagian "menutup" (merapikan setelah Isya).
+- **Mushola 24 jam** — jika mushola tidak pernah dikunci, gunakan pemeriksaan keamanan dan serah-terima petugas; jangan mengunci area yang masih melayani jamaah.
 - **Musim hujan** — periksa atap dan saluran air saat membuka. Letakkan keset di pintu masuk agar lantai tidak licin.

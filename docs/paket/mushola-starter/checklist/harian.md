@@ -2,6 +2,11 @@
 
 Daftar tugas harian yang perlu dikerjakan petugas atau marbot mushola. Cetak dan tempel di papan pengumuman.
 
+Tanggal: [isi] — petugas: [isi] — pengganti: [isi]
+
+Centang hanya pekerjaan yang selesai. Tulis kendala dan penanggung jawabnya
+di bawah. Tandai Tidak berlaku dengan alasan sesuai pengaturan lokal.
+
 ## Pagi (sebelum Subuh/Dzuhur)
 
 - [ ] Buka pintu mushola
@@ -27,8 +32,18 @@ Daftar tugas harian yang perlu dikerjakan petugas atau marbot mushola. Cetak dan
 - [ ] Rapikan sajadah — susun rapi dan kembalikan Al-Quran ke rak
 - [ ] Periksa apakah ada barang tertinggal
 - [ ] Sampah dibuang ke tempatnya
-- [ ] Matikan kipas angin di setiap ruangan
-- [ ] Matikan lampu (biarkan lampu luar jika perlu)
-- [ ] Matikan pengeras suara
-- [ ] Kunci pintu utama
+- [ ] Periksa seluruh ruang yang akan ditutup; pastikan tidak ada jamaah/kegiatan tersisa
+- [ ] Jika ada kegiatan tersisa, koordinasikan dan tunda penguncian ruang tersebut
+- [ ] Matikan kipas yang tidak diperlukan sesuai daftar perangkat lokal
+- [ ] Matikan lampu sesuai daftar lokal; pertahankan lampu/perangkat yang harus menyala
+- [ ] Matikan pengeras suara sesuai kebijakan akhir layanan
+- [ ] Kunci hanya ruang/pintu yang dijadwalkan tutup setelah dipastikan kosong
+- [ ] Serahkan/simpan kunci dengan akses terbatas; catat penerima dan waktu
 - [ ] Catat waktu tutup di buku buka-tutup
+
+Untuk mushola 24 jam, ganti penutupan dengan pemeriksaan keamanan dan
+serah-terima; tandai penguncian Tidak berlaku bila area tetap dibuka.
+
+Kendala/tindakan berikutnya: [isi] — penanggung jawab/tenggat: [isi]
+
+Pemeriksa hasil/waktu: [isi]

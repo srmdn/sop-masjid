@@ -12,7 +12,8 @@ pengganti petugas, serta penanganan kendala operasional.
 
 ## 2. Baca dan sesuaikan bersama
 
-Tentukan petugas, jam kerja, pengganti, dan keputusan yang boleh didelegasikan.
+Isi [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/) untuk
+menentukan petugas, jam kerja, pengganti, dan keputusan yang boleh didelegasikan.
 Baca [simulasi Masjid Contoh](/contoh/) untuk melihat contoh tim kecil.
 Simulasi tersebut bukan laporan penerapan yang sudah disahkan.
 
@@ -23,8 +24,9 @@ melalui menu cetak browser. Untuk menyimpan PDF, pilih tujuan **Simpan sebagai
 PDF** jika tersedia pada perangkatmu.
 
 Halaman template menjelaskan susunan kolom untuk dibuat di Google Sheets
-atau buku catatan. Tautan salinan Google belum tersedia; belum ada tombol
-salin otomatis. Simpan data petugas dan keuangan pada dokumen internal.
+atau buku catatan. Aplikasi tabel lain dapat dipakai; rumus kas perlu
+disesuaikan dan diuji sebelum dijadikan catatan resmi. Tautan salinan Google
+belum tersedia; belum ada tombol salin otomatis. Simpan data petugas dan keuangan pada dokumen internal.
 
 ## 4. Evaluasi dan perbaiki
 

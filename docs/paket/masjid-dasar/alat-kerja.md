@@ -1,12 +1,15 @@
 # Checklist dan format catatan operasional
 
-Versi: 0.1 — 8 Oktober 2026
+Versi: 0.2 — 9 Oktober 2026
 
 Status: format usulan; sesuaikan dengan mandat dan fasilitas masjid.
 
 Gunakan bersama [SOP inti](/paket/masjid-dasar/sop-inti/). Format ini dapat disalin ke buku,
 Google Docs, atau Google Sheets. Simpan data petugas dan catatan kejadian
 secara internal. Belum ada template Google yang dibuat atau dibagikan.
+
+Isi [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/) sebelum memakai format
+ini: petugas, pengganti, tenggat, aturan akses, dan mandat belanja.
 
 ## Cara mencatat
 
@@ -57,7 +60,13 @@ Tanggal/periode: [isi] — petugas: [isi]
 | Teras/jalur masuk dan tempat sampah | [isi] | [isi] | [isi] | [isi] |
 | Persediaan bahan kebersihan diperiksa | [isi] | [isi] | [isi] | [isi] |
 | Peralatan disimpan aman setelah dipakai | [isi] | [isi] | [isi] | [isi] |
-| Lampu/peralatan/pintu diperiksa sesuai kebijakan akhir layanan | [isi] | [isi] | [isi] | [isi] |
+| Ruang yang akan dikunci diperiksa; tidak ada jamaah/kegiatan tersisa | [isi] | [isi] | [isi] | [isi] |
+| Jamaah/kegiatan yang masih berlangsung dikoordinasikan; penguncian ditunda | [isi] | [isi] | [isi] | [isi] |
+| Lampu/peralatan/pintu diperiksa sesuai daftar akhir layanan; perangkat wajib tetap menyala dipertahankan | [isi] | [isi] | [isi] | [isi] |
+
+Pada layanan 24 jam, gunakan pemeriksaan keamanan dan serah-terima. Jangan
+mengunci ruang yang masih digunakan. Penyerahan kunci kepada pemegang
+berwenang dicatat pada format serah-terima di bawah.
 
 Pembagian area tidak berarti semuanya dibersihkan oleh setiap petugas pada
 setiap shift. Tetapkan frekuensi berdasarkan penggunaan dan hasil pemeriksaan.

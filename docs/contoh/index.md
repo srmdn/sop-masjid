@@ -57,8 +57,9 @@ ketersediaan pengajar, waktu, kapasitas, dan persetujuan program jelas.
 
 ## Cara memakai simulasi
 
-Bahas pembagian tugas bersama pengurus dan petugas. Isi nama dan kontak pada
-salinan internal masing-masing masjid. Jangan memasukkan data pribadi,
+Bahas pembagian tugas bersama pengurus dan petugas. Isi
+[lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/) pada salinan
+internal masing-masing masjid. Jangan memasukkan data pribadi,
 akses kunci, atau catatan keuangan internal ke contoh publik.
 
 Setelah rancangan disepakati, tentukan periode uji dan evaluasi berdasarkan

@@ -1,6 +1,6 @@
 # Paket Masjid Dasar
 
-Versi: 0.1 — 8 Oktober 2026
+Versi: 0.2 — 9 Oktober 2026
 
 Status: draf untuk pembahasan dan uji penerapan, panduan adaptasi; belum teruji di lapangan.
 
@@ -10,8 +10,8 @@ Rancangan ini membantu petugas menjalankan kegiatan rutin dengan tugas,
 jadwal, pengganti, dan kewenangan yang jelas. Pengurus menetapkan mandat dan
 meninjau hasil; koordinator mengatur pelaksanaan harian.
 
-Mulai dari [simulasi Masjid Contoh](/contoh/), tetapkan pembagian
-tugas, kemudian gunakan [SOP inti](/paket/masjid-dasar/sop-inti/) dan
+Mulai dari [simulasi Masjid Contoh](/contoh/), isi [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/)
+bersama pengurus, kemudian gunakan [SOP inti](/paket/masjid-dasar/sop-inti/) dan
 [checklist serta format catatan](/paket/masjid-dasar/alat-kerja/). Isi bagian bertanda
 `[isi ...]` sebelum uji berjalan. Format catatan dapat disalin ke buku,
 Google Docs, atau Google Sheets; belum ada tautan template Google siap salin.

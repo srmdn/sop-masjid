@@ -1,6 +1,6 @@
 # SOP Masjid
 
-Toolkit SOP, template, dan checklist operasional masjid/mushola — open source, siap pakai.
+Toolkit SOP, template, dan checklist operasional masjid/mushola — open source, untuk disesuaikan bersama pengurus.
 
 **[Buka Website →](https://srmdn.github.io/sop-masjid/)**
 
