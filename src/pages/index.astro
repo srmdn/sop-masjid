@@ -5,14 +5,15 @@ const areas = [
   ['01', 'Petugas & ibadah', 'Jadwal imam, muadzin, konfirmasi tugas, dan pengganti.', 'paket/mushola-starter/template/jadwal-imam', 'Jadwal petugas'],
   ['02', 'Kebersihan area', 'Pemeriksaan ruang shalat, toilet, tempat wudhu, dan sampah.', 'paket/mushola-starter/sop/kebersihan', 'SOP kebersihan'],
   ['03', 'Fasilitas & persediaan', 'Catat kondisi alat, stok barang, kerusakan, dan perawatan.', 'paket/masjid-dasar/alat-kerja/#persediaan-dan-perawatan', 'Format pemeriksaan'],
-  ['04', 'Kas & belanja', 'Catat transaksi, simpan bukti, dan periksa saldo.', 'paket/mushola-starter/template/kas', 'Struktur buku kas'],
+  ['04', 'Kas & belanja', 'Catat transaksi, simpan bukti, dan periksa saldo.', 'paket/mushola-starter/template/kas', 'Template kas Google Sheets'],
   ['05', 'Jumat & kajian', 'Konfirmasi pelaksana, siapkan tempat, dan catat perubahan acara.', 'paket/masjid-dasar/sop-inti/#sop-06--koordinasi-kajian-rutin', 'SOP kegiatan'],
   ['06', 'Koordinasi harian', 'Bagi tugas, lakukan serah-terima, dan tindak lanjuti kendala.', 'paket/masjid-dasar', 'Pembagian peran'],
 ];
 const tools = [
-  ['01', 'Jadwal imam / muadzin', 'Struktur tabel', 'paket/mushola-starter/template/jadwal-imam'],
-  ['02', 'Pemeriksaan harian', 'Checklist', 'paket/mushola-starter/checklist/harian'],
-  ['03', 'Catatan kendala & serah-terima', 'Format catatan', 'paket/masjid-dasar/alat-kerja'],
+  ['01', 'Buku kas & laporan kas', 'Tersedia · Google Sheets', 'paket/mushola-starter/template/kas'],
+  ['02', 'Jadwal imam / muadzin', 'Belum tersedia · rancangan', 'paket/mushola-starter/template/jadwal-imam'],
+  ['03', 'Pemeriksaan harian', 'Checklist', 'paket/mushola-starter/checklist/harian'],
+  ['04', 'Catatan kendala & serah-terima', 'Format catatan', 'paket/masjid-dasar/alat-kerja'],
 ];
 ---
 <Site>
@@ -50,7 +51,7 @@ const tools = [
   <section class="wrap document-section" aria-labelledby="tools-title">
     <div class="section-heading"><h2 id="tools-title">Dokumen kerja</h2><a class="inline-link" href={href('materi')}>Semua materi →</a></div>
     <div class="document-list">{tools.map(([no, title, type, route]) => <a href={href(route)}><span class="entry-number">{no}</span><h3>{title}</h3><span class="document-type">{type}</span><span class="document-arrow" aria-hidden="true">↗</span></a>)}</div>
-    <p class="availability-note">Baca dan cetak langsung. Halaman template saat ini berisi struktur tabel; file unduhan belum tersedia.</p>
+    <p class="availability-note">Template kas tersedia sebagai Google Sheets yang dapat disalin, beserta contoh simulasi. Materi lainnya dapat dibaca dan dicetak; sebagian template masih berupa struktur tabel. <a href={href('template')}>Lihat seluruh template dan statusnya →</a></p>
   </section>
 
   <section class="wrap collection-section" aria-labelledby="collection-title">

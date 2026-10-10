@@ -20,17 +20,17 @@ Baca dulu semua SOP sebelum membuat salinan template:
 
 ## Langkah 2: Siapkan tabel kerja
 
-Halaman berikut berisi susunan kolom dan petunjuk pengisian:
+Halaman berikut menyediakan template atau susunan kolom beserta petunjuk pengisian:
 
 1. [Template Jadwal Imam/Muadzin](./template/jadwal-imam)
 2. [Template Kas Masuk-Keluar](./template/kas)
 3. [Template Inventaris Barang](./template/inventaris)
 
-Tautan salinan Google dan file unduhan belum tersedia. Buat tabel mengikuti
-struktur yang dibutuhkan di buku, Numbers, Google Sheets, atau aplikasi
-lain. Rumus pada panduan kas perlu diuji di aplikasi pilihanmu; jangan
-menganggap rumus otomatis tersedia setelah menyalin teks. Akun Google
-tidak diperlukan untuk membaca atau mencetak materi.
+Template kas tersedia sebagai master kosong dan contoh simulasi di Google
+Sheets. Buka master lalu pilih **File → Make a copy / Buat salinan** untuk
+mengisi pada akun Google sendiri. Template jadwal dan inventaris masih berupa
+struktur tabel yang dapat dibuat di buku atau aplikasi pilihanmu. Akun Google
+tidak diperlukan untuk membaca atau mencetak materi situs.
 
 Sebelum mulai, isi [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/)
 untuk tugas yang dipakai. Tentukan petugas, pengganti, jam layanan, dan izin

@@ -4,6 +4,8 @@ Template spreadsheet untuk mencatat dan melacak inventaris barang milik mushola.
 
 ## Ketersediaan
 
+**Belum tersedia sebagai file Google Sheets.**
+
 Tautan salinan Google Sheets belum tersedia. Struktur di bawah dapat dibuat
 manual di Google Sheets atau buku catatan. Jangan memasukkan data internal
 ke dokumen yang dibagikan publik.

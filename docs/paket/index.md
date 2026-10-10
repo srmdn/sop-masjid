@@ -10,8 +10,9 @@ Tampilan katalog paket dibuat pada `src/pages/paket.astro`.
 - [Paket Masjid Dasar](/paket/masjid-dasar/): pembagian peran, 10 SOP inti,
   pengganti petugas, komunikasi, dan format catatan operasional.
 
-Keduanya merupakan panduan adaptasi. Tautan salinan Google Sheets belum
-tersedia dan penerapan perlu disesuaikan bersama pengurus.
+Keduanya merupakan panduan adaptasi. [Template kas Google Sheets](/paket/mushola-starter/template/kas/)
+sudah dapat disalin; sebagian template lainnya masih berupa struktur tabel.
+Sesuaikan penerapan dengan kebutuhan dan kondisi masing-masing masjid.
 
 ## Paket dalam rencana
 

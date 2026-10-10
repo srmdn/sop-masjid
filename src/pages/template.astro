@@ -1,0 +1,31 @@
+---
+import Site from '../layouts/Site.astro';
+import { href } from '../lib/materials';
+import { templates } from '../lib/templates';
+const available = templates.filter(t => t.sheet).length;
+const groups = [['awal', 'Template tahap awal'], ['lanjutan', 'Template lanjutan']] as const;
+---
+<Site title="Template">
+  <section class="wrap page-head">
+    <p class="eyebrow">ALAT KERJA</p><h1>Template masjid.</h1>
+    <p>{available} tersedia · {templates.length - available} belum tersedia sebagai file Google. Semua kebutuhan tetap ditampilkan agar perkembangannya mudah dilihat.</p>
+    <p>Buka template yang tersedia, lalu pilih <strong>File → Make a copy / Buat salinan</strong> ke akun Google sendiri. Contoh terisi merupakan simulasi.</p>
+  </section>
+  <div class="wrap template-catalog">
+    {groups.map(([stage, title]) => <section class="template-group" aria-label={title}>
+      <div class="section-heading"><h2>{title}</h2><span class="section-label">{templates.filter(t => t.stage === stage).length} TEMPLATE</span></div>
+      <div class="template-list">{templates.filter(t => t.stage === stage).map(t => <article class="template-entry">
+        <span class="entry-number">{t.id}</span>
+        <div><span class:list={['template-status', { available: !!t.sheet }]}>{t.sheet ? 'Tersedia · Google Sheets v0.3' : 'Belum tersedia'}</span><h3>{t.title}</h3><p>{t.description}</p>
+          {!t.sheet && <p class="template-note">{t.guide ? 'Sebagian rancangan dapat dibaca pada panduan; file Google belum tersedia.' : 'Masih dalam rencana. Cakupan dapat disesuaikan; belum ada jadwal rilis.'}</p>}
+        </div>
+        <div class="template-actions">
+          {t.sheet && <a class="inline-link" href={t.sheet}>Buka dan buat salinan ↗</a>}
+          {t.example && <a href={t.example}>Lihat contoh simulasi ↗</a>}
+          {t.guide && <a href={href(t.guide)}>{t.sheet ? 'Panduan penggunaan →' : 'Lihat rancangan →'}</a>}
+        </div>
+      </article>)}</div>
+    </section>)}
+    <p class="availability-note">Template dapat disesuaikan dengan kondisi masing-masing masjid. Pengguna bertanggung jawab atas data, bukti, dan pemeriksaan. Template kas membantu pencatatan kas sederhana; bukan laporan keuangan lengkap sesuai standar akuntansi.</p>
+  </div>
+</Site>

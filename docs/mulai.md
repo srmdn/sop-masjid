@@ -23,10 +23,11 @@ Checklist dan tabel dapat dicetak melalui tombol **Cetak halaman** atau
 melalui menu cetak browser. Untuk menyimpan PDF, pilih tujuan **Simpan sebagai
 PDF** jika tersedia pada perangkatmu.
 
-Halaman template menjelaskan susunan kolom untuk dibuat di Google Sheets
-atau buku catatan. Aplikasi tabel lain dapat dipakai; rumus kas perlu
-disesuaikan dan diuji sebelum dijadikan catatan resmi. Tautan salinan Google
-belum tersedia; belum ada tombol salin otomatis. Simpan data petugas dan keuangan pada dokumen internal.
+[Template kas](/paket/mushola-starter/template/kas/) tersedia sebagai Google
+Sheets: buka master kosong lalu buat salinan ke folder internal masjid. Contoh
+terisi tersedia untuk belajar. Template lainnya masih menjelaskan susunan kolom
+untuk dibuat di Google Sheets atau buku catatan. Simpan data petugas, transaksi,
+dan bukti keuangan pada dokumen internal; bagikan ringkasan terpisah kepada jamaah.
 
 ## 4. Evaluasi dan perbaiki
 

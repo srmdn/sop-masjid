@@ -1,121 +1,108 @@
-# Template Kas Masuk-Keluar
+# Template Buku Kas dan Laporan Kas Masjid
 
-Versi: 0.2 — 9 Oktober 2026. Struktur tabel dan contoh rumus, bukan file siap pakai.
+Versi: 0.3 — 10 Oktober 2026. Template Google Sheets untuk pencatatan kas sederhana.
 
-## Ketersediaan
+## Buka template
 
-Salinan Google dan file unduhan belum tersedia. Buat tabel di buku atau
-aplikasi pilihanmu. Gunakan bersama [SOP kas](../sop/kas-infak).
-Simpan catatan transaksi dan bukti secara internal.
+**Tersedia — Google Sheets dapat disalin.**
 
-## Buku kas per penyimpanan
+- [Master kosong — buat salinan untuk masjidmu](https://docs.google.com/spreadsheets/d/18LIm5UuJ6eXGEp0EYxxTrqvfNwpYz4Zr45SDGvVn9hk/edit)
+- [Contoh terisi — simulasi Masjid Contoh](https://docs.google.com/spreadsheets/d/1JNwRx22bAiEXgIM3YSa1qeDNLVVrYkF2IXLxtXSZFKc/edit)
 
-Buat satu buku/tabel untuk tunai dan masing-masing rekening, dengan periode
-serta saldo awal yang diperiksa. Jangan mencampur saldo semua tempat ke dalam
-buku tunai. Gunakan susunan kolom berikut jika mencoba rumus di bawah.
+Kedua file dapat dilihat melalui tautan. Untuk mengisi, masuk ke akun Google,
+buka master kosong, lalu pilih **File → Make a copy / Buat salinan**. Simpan
+salinan di folder internal masjid. Tidak perlu Excel atau Numbers.
+Gunakan bersama [SOP kas](../sop/kas-infak).
 
-| Kolom | Isi | Contoh simulasi |
+> Template ini membantu pencatatan kas masuk, kas keluar, dan ringkasan saldo
+> masjid. Silakan sesuaikan dengan kebutuhan serta kondisi masing-masing masjid.
+> Template ini bukan laporan keuangan lengkap sesuai standar akuntansi.
+> Pengguna bertanggung jawab atas kebenaran data, bukti transaksi, dan pemeriksaan
+> saldo. Contoh terisi merupakan simulasi.
+
+## Isi template
+
+Input transaksi sekali pada tab **Transaksi**; tab laporan mengambil data tersebut.
+
+| Tab | Kegunaan | Yang diisi pengguna |
 |---|---|---|
-| A — No | Nomor transaksi/ref pemindahan | TR-001 |
-| B — Tanggal | Nilai tanggal, tampilkan DD/MM/YYYY | 09/10/2026 |
-| C — Jenis | Pemasukan / Pengeluaran / Pemindahan masuk / Pemindahan keluar | Pemasukan |
-| D — Sumber/tujuan | Asal donasi, kebutuhan belanja, atau penyimpanan tujuan | Infak harian |
-| E — Jumlah | Angka rupiah positif, tanpa mengetik Rp atau pemisah ribuan | 50000 |
-| F — Saldo | Saldo berjalan; hitung manual atau dengan rumus | 150000 |
-| G — Keterangan | Dasar izin, pencatat/pemeriksa, serta kendala | Pemeriksa kas bertugas |
-| H — Bukti | Nomor/link bukti internal | HITUNG-001 |
-| I — Pemeriksaan input | Rumus: Kosong / Valid / Periksa input | Valid |
+| Menu | Tautan antartab, panduan, dan status | Tidak perlu |
+| Pengaturan | Identitas, periode, rekening, dana/program, kategori, anggaran, saldo awal dan aktual | Sel kuning muda |
+| Transaksi | Pencatatan kas dan referensi bukti | Kolom A–N, baris 6–105 |
+| Buku Kas | Rincian dan saldo berjalan per rekening | Pilih rekening di B3 |
+| Rekap | Ringkasan harian dan periode | Tidak perlu |
+| Program | Saldo dana dan realisasi belanja terhadap anggaran | Tidak perlu |
+| Kuitansi | Bukti penerimaan dari ID transaksi | ID di B3; terbilang B15 dan nama/tanda tangan B17 manual |
+| Laporan Jamaah | Ringkasan kas tanpa rincian identitas transaksi | Tidak perlu |
+| Pemeriksaan | Isian bermasalah, transfer, dan selisih saldo | Lihat hasil, betulkan sumber input |
 
-Bukti dan izin tetap diperiksa orang; status `Valid` hanya memeriksa beberapa
-isian, bukan membuktikan transaksi benar. Nomor referensi, bukti, dan hasil
-pemeriksaan orang tidak boleh diabaikan hanya karena rumus menghasilkan saldo.
+## Cara mulai
 
-## Cara mencatat
+1. Buat salinan **master kosong**. Gunakan contoh terisi hanya untuk belajar.
+2. Isi Pengaturan: nama masjid, periode pencatatan dan laporan, peran,
+   rekening, dana/program, kategori, serta anggaran bila digunakan. Periode
+   bawaan Oktober 2026 harus disesuaikan.
+3. Isi saldo awal per kombinasi rekening dan dana/program. Saldo awal bukan
+   pemasukan pada periode berjalan. Dana umum dapat memakai `Operasional Umum`.
+4. Catat transaksi di A–N baris 6–105. Gunakan ID unik, tanggal DD/MM/YYYY,
+   dan nominal angka tanpa mengetik `Rp`. Pilih jenis/rekening/program/kategori
+   dari daftar. Tepat satu kolom Masuk atau Keluar berisi nominal positif.
+5. Lengkapi referensi bukti, pencatat, dan pemeriksa. Pencatat dan pemeriksa
+   berbeda. Simpan bukti dan data pihak transaksi secara internal.
+6. Pada Pengaturan, isi saldo aktual tunai/rekening dan tanggal pemeriksaan
+   sesuai akhir periode laporan. Bandingkan dengan saldo buku di Pemeriksaan.
+7. Betulkan isian atau selisih sebelum membagikan laporan. Pilih rekening pada
+   Buku Kas atau ID pemasukan pada Kuitansi sesuai keluaran yang diperlukan.
 
-1. Isi saldo awal yang diperiksa, bukan memasukkannya sebagai pemasukan.
-2. Catat transaksi menurut urutan tanggal. Pilih jenis persis dari daftar dan
-   isi sumber/tujuan serta angka positif. Nol, angka negatif, atau teks nominal
-   perlu diperiksa, bukan dipakai sebagai transaksi biasa.
-3. Catat penerimaan donatur pada penyimpanan yang menerima, belanja pada yang
-   membayar. Pemindahan antarpenyimpanan memakai dua catatan dengan nomor
-   referensi yang sama: keluar di asal dan masuk di tujuan.
-4. Simpan bukti, izin belanja, pencatat, dan pemeriksa. Periksa nomor referensi
-   agar transaksi tidak tercatat dua kali.
+Pemindahan antarpenyimpanan menggunakan dua baris: keluar di rekening asal dan
+masuk di rekening tujuan, dengan referensi transfer, dana, tanggal, dan nominal
+sama. Pemindahan internal tidak menjadi donasi atau belanja luar.
 
-## Contoh rumus saldo
+## Pemeriksaan dan batas penggunaan
 
-Contoh ditulis dengan alamat sel Google Sheets. Pada baris 1 buat judul kolom
-A–I, pada D2 tulis `Saldo awal`, dan isi F2 dengan saldo awal numerik yang
-sudah diperiksa (misalnya `100000`). Biarkan B2, C2, dan E2 kosong.
-Transaksi pertama dimulai pada baris 3.
+- Saldo akhir = saldo awal + pemasukan luar − pengeluaran luar untuk seluruh
+  kas; transfer internal yang lengkap tidak mengubah total saldo.
+- Status `Valid` dan `Siap ditinjau` merupakan hasil kontrol rumus, bukan bukti
+  transaksi benar atau tanda persetujuan pengurus.
+- Nominal Laporan Jamaah menampilkan `#N/A` jika pengisian atau rekonsiliasi
+  belum lengkap/bermasalah. Master kosong memang belum menghasilkan laporan
+  yang siap dibagikan. Perbaiki input; jangan menimpa hasil rumus dengan nol.
+- Bagian otomatis memakai peringatan proteksi. Jika peringatan muncul, batalkan
+  dan isi sel input. Pemilik salinan tetap dapat melanjutkan perubahan rumus.
+- Kapasitas awal **100 transaksi**, maksimal baris 105; pengaturan menampung
+  3 rekening, 4 program, 6 kombinasi saldo awal, dan 9 kategori. Menambah di
+  luar kapasitas memerlukan perluasan semua rumus, dropdown, dan rentang terkait.
+- Jika perlu menyortir input, pilih seluruh rentang **A6:N105**. Hindari
+  menyortir satu kolom saja; O–Q adalah rumus kontrol.
+- Belum mencakup utang, piutang, titipan, uang muka, aset atau penyusutan.
+  Janji donasi belum diterima bukan kas masuk. Template ini belum dinilai
+  kepatuhannya terhadap standar laporan keuangan nonlaba.
 
-Pada I3, periksa isian B–E:
+## Cetak dan bagikan
 
-```text
-=IF(COUNTA(B3:E3)=0,"Kosong",IF(AND(ISNUMBER(B3),B3>0,OR(C3="Pemasukan",C3="Pengeluaran",C3="Pemindahan masuk",C3="Pemindahan keluar"),D3<>"",ISNUMBER(E3),E3>0),"Valid","Periksa input"))
-```
+Untuk ringkasan jamaah, pilih **Laporan Jamaah A1:C26**. Untuk kuitansi,
+pilih **Kuitansi A1:B20**, lengkapi terbilang serta nama/tanda tangan manual.
+Pilih **File → Print → Selected cells**, A4, portrait, fit to width, dan
+nonaktifkan gridlines. Periksa pratinjau serta status sebelum mencetak atau
+menyimpan PDF melalui pilihan yang tersedia pada perangkatmu.
 
-Pada F3, hitung hanya jika input valid dan saldo sebelumnya berupa angka:
+Bagikan PDF atau ringkasan terpisah kepada jamaah. Jangan membagikan seluruh
+workbook internal: penerimanya dapat mengakses semua tab, termasuk tab yang
+disembunyikan. Tautan bukti internal tetap memerlukan pengaturan akses sendiri.
 
-```text
-=IF(I3="Kosong",F2,IF(AND(I3="Valid",ISNUMBER(F2)),F2+IF(OR(C3="Pemasukan",C3="Pemindahan masuk"),E3,-E3),NA()))
-```
+## Pengujian versi ini
 
-Salin **kedua rumus** ke bawah. Referensi F2/B3 dan seterusnya harus ikut
-bergeser. Baris kosong membawa saldo sebelumnya tanpa menambah transaksi.
-Input salah menghasilkan `Periksa input` dan saldo `#N/A`; baris berikutnya
-belum menghasilkan saldo sampai kesalahan sebelumnya diperbaiki. Jangan
-menggantinya dengan nol atau menyembunyikan kesalahan memakai IFERROR.
+Rumus dan salinan diuji langsung di Google Sheets: perhitungan saldo, transfer,
+ID ganda, input salah, pencocokan saldo aktual, tanggal/rupiah Indonesia,
+pengurutan, pemulihan data, serta transaksi ke-100. Pratinjau laporan dan
+kuitansi masing-masing satu halaman. Contoh simulasi memiliki 7 transaksi,
+saldo awal Rp300.000, pemasukan Rp275.000, pengeluaran Rp40.000, dan saldo akhir
+Rp535.000. Transfer internal tidak dihitung sebagai pemasukan/pengeluaran luar.
 
-Kolom tanggal harus berupa nilai tanggal aplikasi, bukan teks yang hanya
-terlihat seperti tanggal. Pemeriksaan angka positif belum memastikan tanggal
-berada dalam periode buku; pemeriksa tetap mencocokkannya. Format angka saldo
-boleh memakai pemisah ribuan. Jangan mengetik ulang hasil rumus.
+Belum diuji pada akun pengguna berbeda, HP asli/aplikasi Google Sheets, cetak
+fisik, atau operasional lapangan. Browser dengan layar kecil perlu digeser
+horizontal. Kompatibilitas Excel/Numbers belum diuji.
 
-Setelan lokal tertentu memakai titik koma sebagai pemisah argumen. Numbers
-memakai tabel dan referensi yang perlu disesuaikan; contoh ini belum diuji
-langsung di Numbers atau Excel. Jika rumus belum berhasil, gunakan hitungan
-manual dengan pemeriksa. Jangan menjadikan buku percobaan sebagai catatan kas
-resmi sebelum hasilnya cocok dengan skenario berikut.
-
-### Skenario sebelum dipakai
-
-| Simulasi dengan saldo awal 100000 | Hasil yang diharapkan |
-|---|---|
-| Pemasukan 50000, lalu pengeluaran 20000 | 150000, lalu 130000 |
-| Baris B–E kosong di antara dua transaksi di atas | Saldo tetap 150000 di baris kosong; berikutnya 130000 |
-| Salah ketik jenis, tanggal teks/kosong, sumber kosong, atau nominal teks/nol/negatif | Periksa input; saldo #N/A |
-| Transaksi valid setelah baris salah | Saldo tetap #N/A sampai baris salah dibetulkan |
-| Pemindahan keluar 30000 dari tunai ke bank | Tunai turun 30000, bank naik 30000; total tidak berubah |
-| Periode baru dengan saldo awal 130000, lalu pemasukan 10000 | 140000 |
-
-Jika menyortir transaksi, pilih seluruh baris transaksi A–I, jangan ikutkan
-baris saldo awal. Setelahnya salin ulang rumus I3/F3 ke seluruh baris transaksi
-agar rantai referensi tetap sesuai urutan, lalu periksa kembali saldo akhir.
-
-## Rekap bulanan dan pemeriksaan
-
-Rekap berikut diisi dari transaksi yang sudah diperiksa; rumus rekap otomatis
-belum disediakan. Buat satu rekap per penyimpanan/periode.
-
-| Hal yang dicatat | Isian |
-|---|---|
-| Periode dan penyimpanan | [isi] |
-| Saldo awal yang diperiksa | [isi] |
-| Pemasukan dari luar | [jumlah jenis Pemasukan] |
-| Pengeluaran ke luar | [jumlah jenis Pengeluaran] |
-| Pemindahan masuk / keluar | [jumlah masing-masing jenis, dengan pasangan referensi] |
-| Saldo akhir buku | [saldo awal + pemasukan − pengeluaran + pemindahan masuk − pemindahan keluar] |
-| Saldo aktual dan tanggal pemeriksaan | [uang fisik atau saldo rekening sesuai penyimpanan] |
-| Selisih dan tindak lanjut | [saldo aktual − saldo buku; alasan, PJ, tenggat] |
-| Pencatat dan pemeriksa | [isi peran/nama pada salinan internal] |
-
-Untuk rekap seluruh masjid, jumlahkan saldo penyimpanan dan cocokkan pasangan
-pemindahan. Pemindahan internal tidak dihitung sebagai donasi atau belanja.
-Uang muka/pemindahan belum selesai dan selisih harus dijelaskan terpisah;
-jangan menyatakan semua saldo cocok jika masih ada yang belum diperiksa.
-Publikasikan ringkasan tanpa kontak, nomor rekening lengkap, atau bukti pribadi.
-
-Referensi fungsi: [IF](https://support.google.com/docs/answer/3093364?hl=en)
-dan [NA](https://support.google.com/docs/answer/3093359?hl=en) pada dokumentasi
-Google Sheets. Referensi fungsi bukan bukti pengujian lintas aplikasi.
+Lisensi konten: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Silakan menyesuaikan dan membagikan kembali dengan atribusi SOP Masjid serta
+lisensi yang sama sesuai ketentuan lisensi.

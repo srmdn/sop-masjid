@@ -312,3 +312,22 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .mobile-table { display: none !important; }
   .responsive-table > table { display: table !important; }
 }
+
+/* Katalog template: status file dipisahkan dari ketersediaan panduan. */
+.template-catalog { padding-bottom: 70px; }
+.template-group + .template-group { margin-top: 55px; }
+.template-list { border-top: 1px solid var(--ink); }
+.template-entry { display: grid; grid-template-columns: 40px minmax(0, 1fr) 240px; gap: 28px; padding: 27px 0; border-bottom: 1px solid var(--line); }
+.template-entry h3 { font-size: 23px; margin: 9px 0; }
+.template-entry p { color: var(--muted); font-size: 14px; max-width: 650px; }
+.template-status { font-size: 12px; color: var(--muted); }
+.template-status.available { color: var(--accent); font-weight: 600; }
+.template-entry .template-note { font-size: 12px; margin-top: 10px; }
+.template-actions { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 12px; font-size: 13px; }
+.template-actions a { min-height: 24px; }
+.material-availability { font-size: 12px; color: var(--muted); margin-top: 9px; }
+@media (max-width: 800px) {
+  .template-entry { grid-template-columns: 28px minmax(0, 1fr); gap: 16px; }
+  .template-actions { grid-column: 2; }
+  .template-entry h3 { font-size: 21px; }
+}

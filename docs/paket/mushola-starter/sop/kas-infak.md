@@ -11,7 +11,7 @@ Selesai jika transaksi, bukti, saldo, dan hasil pemeriksaan dapat ditelusuri.
 
 ## Peralatan
 
-- Buku kas atau [struktur tabel kas](../template/kas).
+- Buku kas atau [template kas Google Sheets](../template/kas).
 - Kotak infak dan tempat penyimpanan yang aksesnya dibatasi.
 - Lembar hitung infak, bukti transaksi, dan mutasi rekening jika ada.
 - [Pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/) berisi petugas,

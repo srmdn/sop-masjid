@@ -13,11 +13,17 @@ Toolkit SOP, template, dan checklist operasional masjid/mushola — open source,
 
 Kunjungi [Mulai di Sini](https://srmdn.github.io/sop-masjid/mulai) — pilih paket sesuai kebutuhan operasional masjid/mushola kamu.
 
+## Template
+
+[Daftar seluruh template dan statusnya](https://srmdn.github.io/sop-masjid/template/):
+template kas tersedia untuk disalin; 22 template lainnya belum tersedia sebagai
+file Google. Sebagian rancangan sudah dapat dibaca.
+
 ## Paket
 
 | Paket | Status |
 |---|---|
-| [Paket Mushola Starter](https://srmdn.github.io/sop-masjid/paket/mushola-starter/) | Panduan tersedia; salinan Google belum tersedia |
+| [Paket Mushola Starter](https://srmdn.github.io/sop-masjid/paket/mushola-starter/) | Panduan tersedia; template kas Google Sheets dapat disalin |
 | [Paket Masjid Dasar](https://srmdn.github.io/sop-masjid/paket/masjid-dasar/) | Panduan adaptasi tersedia; belum teruji di lapangan |
 | Masjid Aktif, Masjid Lengkap, Keuangan Masjid, Ramadhan, Kurban, Digital Admin, Serah Terima Pengurus | Dalam rencana; belum tersedia sebagai paket lengkap |
 
@@ -44,8 +50,9 @@ npm run preview
 
 URL dasar `/sop-masjid/` dipertahankan untuk GitHub Pages. Hasil build ada
 di `dist/`. Dokumen internal berada di `.local/` dan tidak ikut build.
-Tautan salinan Google Sheets belum tersedia; halaman template menampilkan
-struktur serta panduan pengisian.
+[Template kas Google Sheets](https://srmdn.github.io/sop-masjid/paket/mushola-starter/template/kas/)
+tersedia sebagai master kosong dan contoh simulasi. Template lainnya masih
+berupa struktur serta panduan pengisian.
 
 Validasi tautan dan batas konten publik setelah build:
 
