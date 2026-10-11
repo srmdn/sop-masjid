@@ -26,11 +26,11 @@ Halaman berikut menyediakan template atau susunan kolom beserta petunjuk pengisi
 2. [Template Kas Masuk-Keluar](./template/kas)
 3. [Template Inventaris Barang](./template/inventaris)
 
-Template kas tersedia sebagai master kosong dan contoh simulasi di Google
-Sheets. Buka master lalu pilih **File → Make a copy / Buat salinan** untuk
-mengisi pada akun Google sendiri. Template jadwal dan inventaris masih berupa
-struktur tabel yang dapat dibuat di buku atau aplikasi pilihanmu. Akun Google
-tidak diperlukan untuk membaca atau mencetak materi situs.
+Template kas dan jadwal petugas tersedia sebagai master kosong dan contoh
+simulasi di Google Sheets. Buka master lalu pilih **File → Make a copy / Buat
+salinan** untuk mengisi pada akun Google sendiri. Template inventaris masih
+berupa struktur tabel yang dapat dibuat di buku atau aplikasi pilihanmu. Akun
+Google tidak diperlukan untuk membaca atau mencetak materi situs.
 
 Sebelum mulai, isi [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/)
 untuk tugas yang dipakai. Tentukan petugas, pengganti, jam layanan, dan izin

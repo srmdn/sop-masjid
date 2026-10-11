@@ -11,7 +11,7 @@ export type Template = {
 // Daftar publik; jangan masukkan tautan salinan internal atau data masjid aktual.
 export const templates: Template[] = [
   { id: 'T01', title: 'Buku kas dan laporan kas', description: 'Transaksi, buku kas, rekap, dana/program, kuitansi, dan pemeriksaan saldo.', stage: 'awal', guide: 'paket/mushola-starter/template/kas', sheet: 'https://docs.google.com/spreadsheets/d/18LIm5UuJ6eXGEp0EYxxTrqvfNwpYz4Zr45SDGvVn9hk/edit', example: 'https://docs.google.com/spreadsheets/d/1JNwRx22bAiEXgIM3YSa1qeDNLVVrYkF2IXLxtXSZFKc/edit' },
-  { id: 'T02', title: 'Jadwal petugas dan pengganti', description: 'Jadwal imam/muadzin, konfirmasi, pengganti, dan kehadiran.', stage: 'awal', guide: 'paket/mushola-starter/template/jadwal-imam' },
+  { id: 'T02', title: 'Jadwal petugas dan pengganti', description: 'Jadwal imam/muadzin, konfirmasi, pengganti, dan kehadiran.', stage: 'awal', guide: 'paket/mushola-starter/template/jadwal-imam', sheet: 'https://docs.google.com/spreadsheets/d/1xDe9tmztWr9O2UvfJzhZlQaZaMzGFzL8C-EBuhGFtfY/edit', example: 'https://docs.google.com/spreadsheets/d/1k5bVCqyh_VfTxeewwUspXpSVKB4KeMBwYSjue86KF1A/edit' },
   { id: 'T03', title: 'Inventaris, stok, perawatan, dan peminjaman', description: 'Barang, persediaan, perbaikan, peminjaman, dan pengembalian.', stage: 'awal', guide: 'paket/mushola-starter/template/inventaris' },
   { id: 'T04', title: 'Checklist operasional', description: 'Kesiapan shalat, kebersihan, buka-tutup, Jumat, dan pemeriksaan mingguan.', stage: 'awal', guide: 'paket/masjid-dasar/alat-kerja' },
   { id: 'T05', title: 'Pengelolaan kegiatan', description: 'Kalender, persiapan, petugas, pelaksanaan, dan evaluasi kegiatan.', stage: 'awal', guide: 'paket/masjid-dasar/alat-kerja' },

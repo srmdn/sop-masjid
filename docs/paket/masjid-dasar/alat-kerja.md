@@ -5,8 +5,10 @@ Versi: 0.2 — 9 Oktober 2026
 Status: format usulan; sesuaikan dengan mandat dan fasilitas masjid.
 
 Gunakan bersama [SOP inti](/paket/masjid-dasar/sop-inti/). Format ini dapat disalin ke buku,
-Google Docs, atau Google Sheets. Simpan data petugas dan catatan kejadian
-secara internal. Belum ada template Google yang dibuat atau dibagikan.
+Google Docs, atau Google Sheets. Template Google Sheets untuk kas dan jadwal
+petugas tersedia; format operasional lainnya di halaman ini adalah kerangka
+awal yang dapat disalin manual. Simpan data petugas dan catatan kejadian
+secara internal.
 
 Isi [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/) sebelum memakai format
 ini: petugas, pengganti, tenggat, aturan akses, dan mandat belanja.
@@ -21,15 +23,22 @@ koordinator sesuai kesepakatan.
 
 ## Jadwal petugas mingguan
 
-Periode: [isi] — penyusun/pembaruan terakhir: [isi]
+Periode: [isi] — penyusun: [peran] — diperbarui: [tanggal/waktu]
 
-| Tanggal/waktu layanan | Kegiatan | Imam/pelaksana | Muadzin | Kesiapan area | Pengganti yang bersedia | Konfirmasi/perubahan |
+| ID | Tanggal/waktu | Layanan/fungsi | Petugas | Konfirmasi | Pengganti dan jawaban | Hadir/pelaksana aktual |
 |---|---|---|---|---|---|---|
-| [isi] | [shalat/kajian/lainnya] | [isi] | [isi/tidak berlaku] | [isi] | [isi per fungsi] | [isi] |
+| [isi] | [isi] | [shalat/kajian; imam/muadzin/dll.] | [peran/nama pada salinan internal] | [belum diminta/menunggu/terkonfirmasi/berhalangan] | [peran; menunggu/menerima/belum ada] | [diperiksa: waktu; hasil/pelaksana] |
 
-Untuk Masjid Contoh, masukkan imam utama, imam cadangan, serta dua marbot
-berdasarkan ketersediaan nyata. Nama pada kolom pengganti harus sudah
-menyatakan bersedia. Catat benturan tugas muadzin dan kebersihan.
+Simpan kontak, ketersediaan rinci, alasan berhalangan, dan catatan hadir pada
+catatan internal yang aksesnya dibatasi. Untuk tampilan jadwal petugas bagi
+jamaah, salin hanya tanggal, layanan, dan petugas yang penugasannya sudah
+lengkap, dikonfirmasi, dan bebas benturan; jangan
+bagikan seluruh berkas kerja. Nama pada contoh publik memakai label peran dan
+ditandai simulasi. Pengganti harus menyatakan bersedia sebelum jadwal diubah.
+Periksa benturan tugas, termasuk muadzin dan kebersihan.
+
+Format lebih lengkap tersedia pada
+[Template Jadwal Petugas dan Pengganti](/paket/mushola-starter/template/jadwal-imam/).
 
 ## Checklist kesiapan setiap shalat
 
@@ -37,7 +46,7 @@ Tanggal/waktu shalat: [isi] — pemeriksa: [isi]
 
 | Pemeriksaan | Hasil/status | Kendala/tindakan |
 |---|---|---|
-| Imam dan muadzin terkonfirmasi; pengganti jelas bila diperlukan | [isi] | [isi] |
+| Periksa imam dan muadzin hadir; jika berhalangan, pengganti sudah menerima tugas | [isi] | [isi] |
 | Area shalat bersih, kering, dan siap digunakan | [isi] | [isi] |
 | Air wudhu tersedia; toilet dapat digunakan | [isi] | [isi] |
 | Audio diuji singkat; pengaturan sesuai kebutuhan | [isi] | [isi] |

@@ -16,7 +16,7 @@ const groups = [['awal', 'Template tahap awal'], ['lanjutan', 'Template lanjutan
       <div class="section-heading"><h2>{title}</h2><span class="section-label">{templates.filter(t => t.stage === stage).length} TEMPLATE</span></div>
       <div class="template-list">{templates.filter(t => t.stage === stage).map(t => <article class="template-entry">
         <span class="entry-number">{t.id}</span>
-        <div><span class:list={['template-status', { available: !!t.sheet }]}>{t.sheet ? 'Tersedia · Google Sheets v0.3' : 'Belum tersedia'}</span><h3>{t.title}</h3><p>{t.description}</p>
+        <div><span class:list={['template-status', { available: !!t.sheet }]}>{t.sheet ? 'Tersedia · Google Sheets' : 'Belum tersedia'}</span><h3>{t.title}</h3><p>{t.description}</p>
           {!t.sheet && <p class="template-note">{t.guide ? 'Sebagian rancangan dapat dibaca pada panduan; file Google belum tersedia.' : 'Masih dalam rencana. Cakupan dapat disesuaikan; belum ada jadwal rilis.'}</p>}
         </div>
         <div class="template-actions">

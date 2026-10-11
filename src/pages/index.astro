@@ -11,7 +11,7 @@ const areas = [
 ];
 const tools = [
   ['01', 'Buku kas & laporan kas', 'Tersedia · Google Sheets', 'paket/mushola-starter/template/kas'],
-  ['02', 'Jadwal imam / muadzin', 'Belum tersedia · rancangan', 'paket/mushola-starter/template/jadwal-imam'],
+  ['02', 'Jadwal petugas & pengganti', 'Tersedia · Google Sheets', 'paket/mushola-starter/template/jadwal-imam'],
   ['03', 'Pemeriksaan harian', 'Checklist', 'paket/mushola-starter/checklist/harian'],
   ['04', 'Catatan kendala & serah-terima', 'Format catatan', 'paket/masjid-dasar/alat-kerja'],
 ];
@@ -51,7 +51,7 @@ const tools = [
   <section class="wrap document-section" aria-labelledby="tools-title">
     <div class="section-heading"><h2 id="tools-title">Dokumen kerja</h2><a class="inline-link" href={href('materi')}>Semua materi →</a></div>
     <div class="document-list">{tools.map(([no, title, type, route]) => <a href={href(route)}><span class="entry-number">{no}</span><h3>{title}</h3><span class="document-type">{type}</span><span class="document-arrow" aria-hidden="true">↗</span></a>)}</div>
-    <p class="availability-note">Template kas tersedia sebagai Google Sheets yang dapat disalin, beserta contoh simulasi. Materi lainnya dapat dibaca dan dicetak; sebagian template masih berupa struktur tabel. <a href={href('template')}>Lihat seluruh template dan statusnya →</a></p>
+    <p class="availability-note">Template kas dan jadwal petugas tersedia sebagai Google Sheets yang dapat disalin, masing-masing dengan contoh simulasi. Materi lainnya dapat dibaca dan dicetak; sebagian template masih berupa struktur tabel. <a href={href('template')}>Lihat seluruh template dan statusnya →</a></p>
   </section>
 
   <section class="wrap collection-section" aria-labelledby="collection-title">
