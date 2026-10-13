@@ -25,12 +25,14 @@ Halaman berikut menyediakan template atau susunan kolom beserta petunjuk pengisi
 1. [Template Jadwal Imam/Muadzin](./template/jadwal-imam)
 2. [Template Kas Masuk-Keluar](./template/kas)
 3. [Template Inventaris Barang](./template/inventaris)
+4. [T04 Checklist Operasional](/paket/masjid-dasar/template/checklist-operasional/) — bila memerlukan log hasil, pemeriksaan, tindak lanjut, dan rekap
 
-Template kas dan jadwal petugas tersedia sebagai master kosong dan contoh
-simulasi di Google Sheets. Buka master lalu pilih **File → Make a copy / Buat
-salinan** untuk mengisi pada akun Google sendiri. Template inventaris masih
-berupa struktur tabel yang dapat dibuat di buku atau aplikasi pilihanmu. Akun
-Google tidak diperlukan untuk membaca atau mencetak materi situs.
+Template kas, jadwal petugas, dan T04 checklist tersedia sebagai master
+kosong dan contoh simulasi di Google Sheets. Buka master lalu pilih
+**File → Buat salinan** untuk mengisi pada akun Google sendiri. Batasi akses
+salinan kerja yang berisi data aktual; semua tab workbook dapat dilihat oleh
+penerima akses file. Akun Google tidak diperlukan untuk membaca atau mencetak
+materi situs. Template inventaris masih berupa struktur tabel yang dapat dibuat di buku atau aplikasi pilihanmu.
 
 Sebelum mulai, isi [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/)
 untuk tugas yang dipakai. Tentukan petugas, pengganti, jam layanan, dan izin

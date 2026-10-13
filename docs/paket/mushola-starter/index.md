@@ -25,6 +25,7 @@ Paket dasar untuk mushola/surau kecil dengan pengurus terbatas dan kebutuhan adm
 - [Template Jadwal Petugas dan Pengganti](./template/jadwal-imam)
 - [Template Kas dan Laporan Kas](./template/kas)
 - [Template Inventaris Barang](./template/inventaris)
+- [T04 Checklist Operasional](/paket/masjid-dasar/template/checklist-operasional/) — hasil pemeriksaan, rekap, dan cetak per layanan
 
 ### Checklist
 - [Checklist Harian Mushola](./checklist/harian)
@@ -34,7 +35,7 @@ Paket dasar untuk mushola/surau kecil dengan pengurus terbatas dan kebutuhan adm
 
 1. Baca [Panduan Mulai](./panduan-mulai)
 2. Baca SOP yang relevan
-3. Buat salinan Google Sheets untuk template kas atau jadwal petugas; template lainnya dapat dibuat sesuai struktur tabel
+3. Buat salinan Google Sheets untuk kas, jadwal petugas, atau checklist operasional yang dibutuhkan; isi pengaturan lokal sebelum mulai
 4. Cetak checklist dan tempel di mushola
 5. Sesuaikan semua dokumen dengan kondisi mushola kamu
 

@@ -5,9 +5,10 @@ Versi: 0.2 — 9 Oktober 2026
 Status: format usulan; sesuaikan dengan mandat dan fasilitas masjid.
 
 Gunakan bersama [SOP inti](/paket/masjid-dasar/sop-inti/). Format ini dapat disalin ke buku,
-Google Docs, atau Google Sheets. Template Google Sheets untuk kas dan jadwal
-petugas tersedia; format operasional lainnya di halaman ini adalah kerangka
-awal yang dapat disalin manual. Simpan data petugas dan catatan kejadian
+Google Docs, atau Google Sheets. Template Google Sheets untuk kas, jadwal
+petugas, dan [T04 checklist operasional](/paket/masjid-dasar/template/checklist-operasional/)
+tersedia sebagai master dan contoh simulasi. Format lain di halaman ini
+adalah kerangka awal yang dapat disalin manual. Simpan data petugas dan catatan kejadian
 secara internal.
 
 Isi [lembar pengaturan lokal](/paket/masjid-dasar/pengaturan-lokal/) sebelum memakai format
@@ -41,6 +42,9 @@ Format lebih lengkap tersedia pada
 [Template Jadwal Petugas dan Pengganti](/paket/mushola-starter/template/jadwal-imam/).
 
 ## Checklist kesiapan setiap shalat
+
+Untuk log hasil, pemeriksaan, tindak lanjut, rekap periode, dan cetak per
+layanan, gunakan [panduan T04](/paket/masjid-dasar/template/checklist-operasional/).
 
 Tanggal/waktu shalat: [isi] — pemeriksa: [isi]
 

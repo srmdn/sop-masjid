@@ -17,6 +17,7 @@ Menjelaskan tugas kebersihan harian di mushola agar lingkungan selalu bersih, ny
 - Trash bag
 - Sarung tangan karet
 - Penyemprot disinfektan (opsional)
+- Tanda/pembatas area yang masih basah; perlindungan lain menurut produk/tugas
 
 ## Langkah
 
@@ -34,8 +35,8 @@ Menjelaskan tugas kebersihan harian di mushola agar lingkungan selalu bersih, ny
 ### Setelah Shalat (Siang/Sore)
 
 1. **Sapu area yang terlewati** — periksa apakah ada sampah baru setelah jamaah datang.
-2. **Pel lantai jika perlu** — gunakan kain pel lembab (tidak perlu basah penuh) untuk menghilangkan debu dan noda. Pel ruang utama, ruang wudu, dan toilet secara terpisah.
-3. **Keringkan area wudu** — pastikan lantai area wudu tidak genang air yang bisa membahayakan jamaah.
+2. **Pel lantai jika perlu** — pilih bahan/cara sesuai petunjuk permukaan dan produk. Pisahkan alat toilet dari alat area shalat. Beri tanda dan batasi akses selama lantai masih basah; sediakan jalur yang dapat dilalui.
+3. **Periksa hasil pembersihan** — tangani genangan dan periksa permukaan sebelum membuka kembali akses. Lantai yang baru dipel belum otomatis layak dilalui.
 4. **Isi ulang perlengkapan** — periksa apakah sabun, tissue, atau air wudu perlu diisi ulang.
 5. **Periksa tempat sampah** — kosongkan jika sudah penuh.
 
@@ -52,5 +53,7 @@ Menjelaskan tugas kebersihan harian di mushola agar lingkungan selalu bersih, ny
 - **Musim hujan** — tingkatkan frekuensi pel dan periksa kebocoran atap. Letakkan keset di pintu masuk.
 - **Musim kemarau** — debu lebih banyak, sapu lebih sering. Pastikan kipas angin dinyalakan saat pel agar lantai cepat kering.
 - **Hari Jumat** — bersihkan lebih menyeluruh karena jumlah jamaah lebih banyak. Periksa karpet/sajadah dan cuci jika perlu.
-- **Produk pembersih** — gunakan produk yang ramah lingkungan dan tidak beraroma menyengat. Hindari pemutih di area shalat karena baunya mengganggu.
+- **Produk pembersih** — ikuti label, kebutuhan ventilasi/perlindungan, dan kesesuaian permukaan. Jangan mencampur pemutih/disinfektan dengan pembersih lain. [Rujukan CDC](https://www.cdc.gov/hygiene/about/cleaning-and-disinfecting-with-bleach.html).
 - **Laporan kerusakan** — jika menemukan kerusakan saat membersihkan (keramik pecah, pipa bocor, lampu mati), catat dan laporkan ke pengurus segera.
+- **Catatan hasil** — gunakan [T04 checklist operasional](/paket/masjid-dasar/template/checklist-operasional/). Pembersihan, hasil pemeriksaan, dan tindak lanjut dicatat terpisah sesuai tugas.
+- **Lantai basah** — pengendalian akses dan cara pembersihan merujuk praktik [HSE](https://www.hse.gov.uk/slips/cleaning.htm), disesuaikan dengan area setempat.

@@ -2,6 +2,10 @@
 
 Daftar tugas harian yang perlu dikerjakan petugas atau marbot mushola. Cetak dan tempel di papan pengumuman.
 
+Pembagian waktu di bawah adalah contoh; sesuaikan dengan jam layanan,
+kondisi area, dan petugas. Catatan hasil yang lebih lengkap tersedia pada
+[T04 checklist operasional](/paket/masjid-dasar/template/checklist-operasional/).
+
 Tanggal: [isi] — petugas: [isi] — pengganti: [isi]
 
 Centang hanya pekerjaan yang selesai. Tulis kendala dan penanggung jawabnya
@@ -21,7 +25,7 @@ di bawah. Tandai Tidak berlaku dengan alasan sesuai pengaturan lokal.
 
 ## Siang (sebelum Dzuhur/Asyar)
 
-- [ ] Periksa kebersihan area wudu — lap genangan air
+- [ ] Periksa kebersihan area wudu — tangani genangan dan kendalikan akses selama lantai masih basah
 - [ ] Isi ulang sabun, tissue, atau air wudu jika habis
 - [ ] Periksa toilet — sikat jika kotor
 - [ ] Rapikan tempat sepatu/sandal

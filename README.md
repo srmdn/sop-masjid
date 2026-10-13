@@ -16,7 +16,7 @@ Kunjungi [Mulai di Sini](https://srmdn.github.io/sop-masjid/mulai) — pilih pak
 ## Template
 
 [Daftar seluruh template dan statusnya](https://srmdn.github.io/sop-masjid/template/):
-template kas dan jadwal petugas tersedia untuk disalin; 21 template lainnya belum tersedia sebagai
+template kas, jadwal petugas, dan checklist operasional tersedia untuk disalin; 20 template lainnya belum tersedia sebagai
 file Google. Sebagian rancangan sudah dapat dibaca.
 
 ## Paket
@@ -50,11 +50,10 @@ npm run preview
 
 URL dasar `/sop-masjid/` dipertahankan untuk GitHub Pages. Hasil build ada
 di `dist/`. Dokumen internal berada di `.local/` dan tidak ikut build.
-Template kas dan jadwal petugas Google Sheets tersedia sebagai master kosong
-dan contoh simulasi. [Panduan template kas](https://srmdn.github.io/sop-masjid/paket/mushola-starter/template/kas/)
-dan [panduan jadwal petugas](https://srmdn.github.io/sop-masjid/paket/mushola-starter/template/jadwal-imam/)
-menjelaskan salinan dan penggunaan. Template lainnya masih berupa struktur
-serta panduan pengisian.
+Template kas, jadwal petugas, dan checklist operasional Google
+Sheets tersedia sebagai master dan contoh simulasi. [Katalog template](https://srmdn.github.io/sop-masjid/template/)
+memuat tautan file serta panduan penggunaan. Sebagian template lainnya masih
+berupa struktur dan panduan pengisian.
 
 Validasi tautan dan batas konten publik setelah build:
 
