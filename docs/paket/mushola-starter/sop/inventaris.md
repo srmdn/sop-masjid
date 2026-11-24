@@ -1,77 +1,34 @@
-# SOP Inventaris Barang Mushola
+# SOP Pencatatan Inventaris dan Stok Mushola
 
-Menjelaskan tata cara mencatat, merawat, dan memperbarui daftar inventaris barang milik mushola.
+Panduan untuk mencatat aset, persediaan, perawatan, dan peminjaman menggunakan aturan yang disepakati pengurus.
 
 ## Tujuan
 
-- Mengetahui dengan jelas barang apa saja yang dimiliki mushola.
-- Mempermudah pemeriksaan dan perawatan barang.
-- Memudahkan serah-terima inventaris saat pergantian pengurus.
-- Mencegah kehilangan atau kerusakan yang tidak terdeteksi.
+- Mengetahui barang yang tersedia, kondisi/lokasinya, dan tindak lanjut yang masih berjalan.
+- Memisahkan aset yang digunakan berulang dari stok habis pakai.
+- Menyediakan jejak perubahan serta rujukan pengadaan/perawatan tanpa membuat catatan kas tandingan.
 
 ## Peralatan
 
-- [Template Inventaris Barang](../template/inventaris.md) (Google Sheets) atau buku inventaris tulis
-- Kamera HP (untuk mendokumentasikan kondisi barang)
-- Label atau stiker (untuk menandai milik mushola)
-- Kotak penyimpanan atau rak (untuk barang yang tidak terpasang)
+- [Template T03 — Inventaris, Stok, Perawatan, dan Peminjaman](../template/inventaris.md), salinannya, atau buku kerja setempat.
+- Daftar barang, aturan akses, batas minimum stok, dan pembagian peran yang telah disepakati.
+- Petunjuk pabrik atau rujukan teknisi yang sesuai untuk pemeriksaan/perbaikan.
 
 ## Langkah
 
-### Mencatat Inventaris Awal
-
-1. **Lakukan pendataan** — walk through seluruh mushola dan catat setiap barang yang dimiliki. Mulai dari ruang utama, ruang wudu, toilet, hingga area luar.
-2. **Isi template inventaris** — untuk setiap barang, catat:
-   - Nama barang
-   - Jumlah
-   - Kondisi (baik, cukup, rusak ringan, rusak berat)
-   - Tanggal perolehan (jika diketahui)
-   - Sumber perolehan (beli, sumbangan, tidak diketahui)
-   - Lokasi penyimpanan
-   - Keterangan tambahan
-3. **Dokumentasikan foto** — ambil foto setiap barang (terutama barang bernilai) sebagai bukti visual. Simpan foto di folder khusus (Google Drive atau HP bendahara).
-4. **Berikan label** — tempelkan label "Milik Mushola" pada barang yang mudah dipindahkan (kipas, Al-Quran, karpet, dll).
-
-### Merawat Inventaris
-
-1. **Periksa berkala** — lakukan pengecekan inventaris setiap bulan. Cocokkan dengan daftar inventaris.
-2. **Catat kerusakan** — jika ada barang yang rusak, catat di kolom keterangan:
-   - Tanggal kerusakan ditemukan
-   - Jenis kerusakan
-   - Tindakan yang diambil (diperbaiki, diganti, ditangguhkan)
-3. **Perbaiki atau ganti** — koordinasikan dengan bendahara untuk memperbaiki atau mengganti barang rusak. Catat pengeluaran di buku kas.
-4. **Update daftar** — setiap ada barang baru (beli atau sumbangan), segera tambahkan ke daftar inventaris.
-
-### Menangani Kehilangan
-
-1. **Laporkan segera** — jika ada barang hilang, laporkan ke pengurus.
-2. **Catat di inventaris** — ubah status barang menjadi "hilang" dan catat tanggal serta keterangan.
-3. **Cek ulang** — pastikan barang benar-benar hilang, bukan hanya dipindahkan ke lokasi lain.
-4. **Evaluasi** — apakah perlu penggantian? Apakah perlu meningkatkan keamanan?
-
-### Serah-Terima Inventaris
-
-1. **Bendahara lama menyerahkan** — daftar inventaris, foto-foto barang, dan barang fisik yang tertanda "Milik Mushola".
-2. **Bendahara baru memeriksa** — cross-check setiap barang dengan daftar. Tandatangani berita acara jika cocok.
-3. **Catat selisih** — jika ada barang yang tidak cocok antara daftar dan kondisi fisik, catat di berita acara dan tindak lanjuti.
-
-## Kategori Barang yang Wajib Dicatat
-
-| Kategori | Contoh |
-|---|---|
-| Perlengkapan shalat | Sajadah, Al-Quran, mukena, rak sepatu |
-| Kebersihan | Sapu, pel, ember, trash bag, sabun |
-| Listrik dan air | Lampu, kipas, AC, heater air, pompa air |
-| Audio | Pengeras suara, microphone, kabel |
-| Perabot | Lemari, meja, kursi, papan pengumuman |
-| Perlengkapan wudu | Gayung, sabun, tissue, rak handuk |
-| Dokumen | Buku kas, buku tamu, kotak infak |
+1. **Tetapkan cara pencatatan.** Pengurus menentukan ID unik, kategori, lokasi, penanggung jawab (peran), siapa yang mencatat/memeriksa, dan akses ke salinan kerja.
+2. **Catat aset.** Masukkan barang tahan lama/peralatan satu per satu ke tab Aset. Catat kondisi dan status keberadaan sesuai pemeriksaan. Jangan menebak tanggal atau nilai perolehan; gunakan “tidak diketahui” bila perlu.
+3. **Catat perubahan.** Simpan perubahan lokasi, kondisi, status pinjam, kehilangan/penemuan, atau penghapusan pada Mutasi Aset. Perbarui status terkini di Aset tanpa menghapus riwayat. Pastikan dugaan kehilangan diperiksa sebelum status diubah.
+4. **Catat stok.** Masukkan barang habis pakai ke Stok dengan satuan konsisten, saldo awal terverifikasi, dan batas minimum yang diputuskan secara lokal. Catat setiap barang masuk/keluar atau koreksi satu kali pada Mutasi Stok; gunakan jumlah positif dan tipe mutasi yang benar.
+5. **Kelola pengadaan.** Catat permintaan, keputusan sesuai mandat, pemesanan, dan penerimaan pada Pengadaan. Setelah barang diterima, masukkan satu mutasi `Masuk` yang merujuk ID permintaan. Catat nilai dan pembayaran pada T01 sesuai prosedur kas masjid.
+6. **Jadwalkan perawatan.** Gunakan petunjuk alat, kondisi, dan jadwal lokal. Catat keluhan, tenggat, status, serta hasil. Pekerjaan yang memerlukan kompetensi, kewenangan, atau perlindungan khusus diteruskan kepada teknisi yang sesuai.
+7. **Catat peminjaman.** Sebelum barang keluar, periksa kondisi, catat tenggat dan peran/nama seperlunya. Saat barang kembali, catat tanggal serta kondisi dan tindak lanjuti keterlambatan/kehilangan. Perbarui status keberadaan aset dan riwayat mutasinya.
+8. **Periksa ringkasan dan catatan nyata.** Cocokkan pengingat stok, perawatan, dan pinjaman dengan pemeriksaan fisik atau konfirmasi kepada petugas. Ringkasan formula bukan bukti pemeriksaan fisik.
 
 ## Catatan
 
-- **Sederhana dulu** — untuk mushola kecil, daftar di buku tulis sudah cukup. Yang penting konsisten.
-- **Prioritaskan barang bernilai** — jika waktu terbatas, utamakan pendataan barang yang bernilai tinggi (kipas, pengeras suara, AC).
-- **Foto sangat membantu** — foto sebelum dan sesudah sangat berguna saat ada sengketa atau saat serah-terima pengurus.
-- **Label jelas** — barang yang tertanda "Milik Mushola" lebih sulit hilang atau dipindahkan tanpa sepengetahuan.
-- **Musim hujan** — periksa kebersihan dan kekeringan barang yang terbuat dari kayu atau besi. Karpet dan sajadah mudah berjamur jika lembab.
-- **Jangan lupa barang kecil** — gayung, sabun, tissue holder, dan rak sepatu sering luput dari inventaris. Catat semua.
+- Jadwal, batas stok, kategori, izin pinjam, dan siapa yang berwenang menyetujui ditetapkan pengurus sesuai kondisi masjid; template tidak menetapkan angka atau mandat tersebut.
+- Batasi akses ke data peminjam dan catatan barang. Hindari nomor telepon atau data pribadi yang tidak diperlukan. Jangan memakai master/contoh publik untuk memasukkan data aktual.
+- Semua tab dalam satu workbook dapat terlihat oleh penerima akses file. Menyembunyikan tab tidak membatasi akses.
+- T03 mencatat kebutuhan, penerimaan, dan rujukan saja; transaksi kas dicatat pada [SOP Pengelolaan Kas Infak Sederhana](./kas-infak) dan T01.
+- Template adalah alat bantu awal, bukan bukti bahwa prosedur telah diuji di lapangan atau sesuai untuk setiap masjid.

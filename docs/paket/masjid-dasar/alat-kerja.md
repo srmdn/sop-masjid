@@ -6,7 +6,7 @@ Status: format usulan; sesuaikan dengan mandat dan fasilitas masjid.
 
 Gunakan bersama [SOP inti](/paket/masjid-dasar/sop-inti/). Format ini dapat disalin ke buku,
 Google Docs, atau Google Sheets. Template Google Sheets untuk kas, jadwal
-petugas, dan [T04 checklist operasional](/paket/masjid-dasar/template/checklist-operasional/)
+petugas, inventaris, dan [T04 checklist operasional](/paket/masjid-dasar/template/checklist-operasional/)
 tersedia sebagai master dan contoh simulasi. Format lain di halaman ini
 adalah kerangka awal yang dapat disalin manual. Simpan data petugas dan catatan kejadian
 secara internal.

@@ -1,70 +1,47 @@
-# Template Inventaris Barang
+# Template Inventaris, Stok, Perawatan, dan Peminjaman
 
-Template spreadsheet untuk mencatat dan melacak inventaris barang milik mushola. Catat dari kipas angin sampai gayung — semuanya.
+T03 memisahkan **aset yang dipakai berulang** dari **stok yang habis dipakai**. Satu workbook juga mencatat perubahan, pengadaan, perawatan, peminjaman, dan ringkasan pengingat.
 
-## Ketersediaan
+## File
 
-**Belum tersedia sebagai file Google Sheets.**
+- [Master kosong — buat salinan untuk masjidmu](https://docs.google.com/spreadsheets/d/1DZS8TrwWmWRte_4kXB9kW4-k8xcDze6fApy14DT4ylc/edit)
+- [Contoh simulasi Masjid Contoh](https://docs.google.com/spreadsheets/d/1o3V24B0p7fipV5k-LqNuXNa0LEpB4ESyubnvGRDFZ8Y/edit)
 
-Tautan salinan Google Sheets belum tersedia. Struktur di bawah dapat dibuat
-manual di Google Sheets atau buku catatan. Jangan memasukkan data internal
-ke dokumen yang dibagikan publik.
+Contoh berisi nilai rekaan untuk menunjukkan alur; bukan data lapangan, rekomendasi batas stok, atau praktik yang telah diuji di masjid. Master sengaja kosong. Isi salinan kerja dengan data lokal seperlunya dan batasi aksesnya.
 
-## Struktur Template
+## Cara memulai
 
-Template terdiri dari beberapa **sheet** (tab):
+1. Buka master, lalu pilih **File → Buat salinan**. Tentukan pengurus yang mengisi dan memeriksa.
+2. Tentukan format ID unik, lokasi penyimpanan, peran penanggung jawab, kategori, serta batas minimum stok yang disepakati setempat.
+3. Masukkan aset satu per satu ke **Aset**. Gunakan **Mutasi Aset** untuk mencatat perubahan penting, lalu perbarui nilai terkini pada **Aset**.
+4. Pisahkan bahan habis pakai di **Stok**. Isi saldo awal dan batas minimum; catat penerimaan, penggunaan, dan koreksi masing-masing satu kali di **Mutasi Stok** dengan jumlah positif.
+5. Catat permintaan sampai penerimaan pada **Pengadaan**. Setelah barang benar-benar diterima, catat satu baris `Masuk` pada **Mutasi Stok** dengan ID permintaan yang sama. Pengeluaran uang dan bukti transaksinya tetap dicatat di T01.
+6. Catat jadwal atau tindak lanjut perbaikan di **Perawatan**, serta barang keluar dan kembali di **Peminjaman**. Pengingat membantu menandai tenggat; tetap konfirmasikan kondisi dan tindakan kepada petugas terkait.
+7. Lihat angka ringkas di **Ringkasan** dan cocokkan dengan catatan sumber. Formula hanya mencakup ruang baris awal yang tersedia; tambah baris dengan menyalin formula/validasi/format yang sesuai.
 
-### Sheet 1: Daftar Inventaris
+## Tab dalam workbook
 
-| Kolom | Keterangan | Contoh Isi |
-|---|---|---|
-| No | Nomor urut | 1 |
-| Nama Barang | Nama dan deskripsi singkat | "Kipas Angin Maspion 16 inch" |
-| Kategori | Pilih dari daftar: Perlengkapan Shalat, Kebersihan, Listrik & Air, Audio, Perabot, Perlengkapan Wudu, Dokumen | "Listrik & Air" |
-| Jumlah | Angka | 3 |
-| Satuan | Unit, Buah, Set, Pak | "Buah" |
-| Lokasi | Di mana barang disimpan/dipasang | "Ruang utama — 2, Ruang wudu — 1" |
-| Kondisi | Baik / Cukup / Rusak Ringan / Rusak Berat | "Baik" |
-| Tanggal Perolehan | Perkiraan atau pasti (DD/MM/YYYY) | "01/03/2024" |
-| Sumber | Beli, Sumbangan, Tidak Diketahui | "Beli" |
-| Foto | Link foto barang (Google Drive) | — |
-| Keterangan | Info tambahan, riwayat perbaikan | "Diperbaiki Mei 2025: ganti baling-baling" |
+| Tab | Fungsi |
+|---|---|
+| Baca Dulu | Cara penggunaan, privasi, batas kapasitas, dan lisensi. |
+| Ringkasan | Hitungan aset, stok minimum, perawatan jatuh tempo, dan pinjaman terbuka/terlambat. |
+| Aset | Satu baris untuk setiap barang tahan lama/peralatan, dengan status lokasi dan kondisi terkini. |
+| Mutasi Aset | Riwayat perubahan aset; jangan menghapus riwayat barang hilang atau dihapus. |
+| Stok | Saldo awal, batas minimum lokal, saldo hasil mutasi, serta lokasi dan peran penanggung jawab. |
+| Mutasi Stok | Catatan `Masuk`, `Keluar`, dan koreksi. Saldo dihitung dari tab ini. |
+| Pengadaan | Permintaan, persetujuan, pemesanan, penerimaan, dan rujukan transaksi T01. |
+| Perawatan | Jadwal, keluhan, kebutuhan teknisi, status, hasil, dan pengingat. Ikuti petunjuk alat dan kompetensi pelaksana. |
+| Peminjaman | Kondisi saat keluar/kembali, tenggat, status, dan pengingat keterlambatan. |
 
-### Sheet 2: Log Perubahan
+## Batas dan privasi
 
-| Kolom | Keterangan | Contoh Isi |
-|---|---|---|
-| Tanggal | Tanggal kejadian | 10/06/2025 |
-| Nama Barang | Nama barang yang berubah | "Kipas Angin Maspion" |
-| Jenis Perubahan | Rusak / Diperbaiki / Ditambah / Dihapus / Hilang | "Diperbaiki" |
-| Keterangan Perubahan | Detail | "Ganti dinamo, biaya Rp 200.000" |
-| Ditangani Oleh | Nama pengurus yang menangani | "Bpk. Hasan (Bendahara)" |
+- Status stok adalah pengingat pada atau di bawah batas minimum yang ditetapkan masjid; angka itu bukan rekomendasi standar.
+- Saldo stok mengikuti mutasi yang dicatat, bukan pemeriksaan fisik otomatis. Rekonsiliasi dengan stok nyata secara berkala.
+- Catatan pinjaman di versi ini hanya memuat satu peminjam, satu pengembalian, dan status sederhana. Aturan kelayakan barang, persetujuan, pengembalian sebagian, dan tindak lanjut kehilangan perlu ditetapkan pengurus sesuai kebutuhan lokal.
+- Gunakan nama/peran seperlunya. Hindari nomor telepon, alamat, identitas sensitif, dan tautan bukti yang memberi akses lebih luas dari kebutuhan.
+- Workbook memiliki beberapa tab kerja. Siapa pun yang mendapat akses file dapat melihat semua tab; menyembunyikan tab bukan kontrol akses. Jangan membagikan salinan kerja berisi data aktual sebagai contoh publik.
+- T03 mencatat kebutuhan dan rujukan, bukan saldo kas. Catat transaksi uang di [T01 — Kas Masuk-Keluar](./kas).
 
-## Cara Isi
+## Lisensi
 
-### Mengisi Daftar Inventaris Awal
-
-1. **Siapkan kategori** — gunakan kategori yang sudah ada di kolom Kategori. Jangan buat kategori baru kecuali memang tidak muat.
-2. **Walk through mushola** — bawa HP dan catat setiap barang. Mulai dari depan pintu:
-   - Ruang utama: sajadah, Al-Quran, lampu, kipas, pengeras suara...
-   - Ruang wudu: kran, gayung, sabun, cermin...
-   - Toilet: kloset, shower, tissue holder...
-   - Area luar: keset, rak sepatu, tong sampah...
-3. **Ambil foto** — foto setiap barang (terutama yang bernilai). Ini bukti visual yang sangat berguna nanti.
-4. **Tentukan kondisi** — jujur pada diri sendiri. Jangan semua ditulis "Baik" padahal ada yang sudah getar atau karatan.
-5. **Isi tanggal & sumber** — kalau tidak tahu tanggal pasti, perkirakan saja. Tulis "Tidak Diketahui" jika memang tidak ada yang tahu.
-
-### Memperbarui Inventaris
-
-- **Barang baru** — tambahkan di baris paling bawah. Beri No urut baru.
-- **Barang rusak/hilang** — jangan hapus barisnya. Ubah kolom Kondisi dan tambahkan catatan di kolom Keterangan. Catat juga di sheet "Log Perubahan".
-- **Perbaikan** — catat di sheet "Log Perubahan". Tidak perlu mengubah yang di sheet "Daftar Inventaris" kecuali kondisinya berubah drastis.
-
-## Tips
-
-- **Mulai dari yang terlihat** — barang besar dan mudah terlihat dulu (kipas, lampu, karpet). Barang kecil (sabun, gayung) bisa menyusul.
-- **Foto adalah teman** — terutama saat serah-terima pengurus. Foto membuktikan kondisi barang saat diserahkan.
-- **Cek sebelum Ramadhan** — Ramadhan adalah waktu tersibuk mushola. Pastikan semua barang berfungsi sebulan sebelumnya.
-- **Beri label** — tempelkan stiker "Milik Mushola" di setiap barang. Ini mencegah barang "pindah" ke rumah pengurus.
-- **Jangan lupa dokumen** — buku kas, buku tamu, dan kotak infak juga termasuk inventaris. Catat juga.
-- **Update setiap ada perubahan** — jangan tunda. Barang baru masuk? Langsung catat. Barang rusak? Langsung catat. Semakin rajin sekarang, semakin mudah nanti saat serah-terima.
+Konten: CC BY-SA 4.0. © srmdn / SOP Masjid. [Baca lisensi](https://creativecommons.org/licenses/by-sa/4.0/).
